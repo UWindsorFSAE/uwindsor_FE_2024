@@ -1,1 +1,2 @@
-# uwindsor_FE_2024
+# Uwindsor FSAE 2024 - 2025
+The following 
