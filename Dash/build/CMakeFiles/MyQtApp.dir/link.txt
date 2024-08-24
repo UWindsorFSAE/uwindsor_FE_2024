@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/MyQtApp.dir/main.cpp.o -o MyQtApp  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3 
