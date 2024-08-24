@@ -1,0 +1,3 @@
+/mnt/c/Users/Arsalaan.Ali/Documents/Other/uwindsor_FE_2024/Dash/build/CMakeFiles/MyQtApp.dir
+/mnt/c/Users/Arsalaan.Ali/Documents/Other/uwindsor_FE_2024/Dash/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Arsalaan.Ali/Documents/Other/uwindsor_FE_2024/Dash/build/CMakeFiles/rebuild_cache.dir
