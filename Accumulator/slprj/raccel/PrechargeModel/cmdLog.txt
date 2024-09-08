@@ -2,7 +2,11 @@
 	---> i18n_init
 	---> Parse Arguments
 The argument '-tgtconn_server_info_file' passed to rtiostream_tcpip is not valid and will be ignored.
+<<<<<<< HEAD
 The argument 'C:\Users\HP\AppData\Local\Temp\tgtconnp8b8e9243_fd22_468e_8e24_9938294b9254.info' passed to rtiostream_tcpip is not valid and will be ignored.
+=======
+The argument 'C:\Users\bansa\AppData\Local\Temp\tgtconnp2cad72c8_e541_44cc_80bc_1a9ace440c28.info' passed to rtiostream_tcpip is not valid and will be ignored.
+>>>>>>> 81c8384189821102f0fc1ec7f00fd4773b07ae88
 The argument '-tgtconn_port' passed to rtiostream_tcpip is not valid and will be ignored.
 The argument '0' passed to rtiostream_tcpip is not valid and will be ignored.
 Firewall Rule Add failed: 80070005
