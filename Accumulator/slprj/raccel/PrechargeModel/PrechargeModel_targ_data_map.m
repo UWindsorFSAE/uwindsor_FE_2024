@@ -31,11 +31,11 @@
             section.nData     = 2;
             section.data(2)  = dumData; %prealloc
 
-                    ;% rtP.StairGenerator_RepeatPattern
+                    ;% rtP.PreChargeControlSwitch_RepeatPattern
                     section.data(1).logicalSrcIdx = 0;
                     section.data(1).dtTransOffset = 0;
 
-                    ;% rtP.StairGenerator_TimeInput
+                    ;% rtP.PreChargeControlSwitch_TimeInput
                     section.data(2).logicalSrcIdx = 1;
                     section.data(2).dtTransOffset = 1;
 
@@ -183,13 +183,13 @@
                     section.data(1).logicalSrcIdx = 0;
                     section.data(1).dtTransOffset = 0;
 
-                    ;% rtB.nrxejncqrw
+                    ;% rtB.asepqqecqj
                     section.data(2).logicalSrcIdx = 1;
                     section.data(2).dtTransOffset = 1;
 
-                    ;% rtB.asepqqecqj
+                    ;% rtB.nrxejncqrw
                     section.data(3).logicalSrcIdx = 2;
-                    section.data(3).dtTransOffset = 2;
+                    section.data(3).dtTransOffset = 5;
 
                     ;% rtB.ifpoliolwo
                     section.data(4).logicalSrcIdx = 3;
@@ -342,7 +342,7 @@
                     section.data(10).logicalSrcIdx = 16;
                     section.data(10).dtTransOffset = 9;
 
-                    ;% rtDW.nq5hownsx1.LoggedData
+                    ;% rtDW.luqt303qcg.LoggedData
                     section.data(11).logicalSrcIdx = 17;
                     section.data(11).dtTransOffset = 10;
 
@@ -452,8 +452,8 @@
     ;%
 
 
-    targMap.checksum0 = 3405627555;
-    targMap.checksum1 = 861820321;
-    targMap.checksum2 = 3847794471;
-    targMap.checksum3 = 3409354729;
+    targMap.checksum0 = 2535319868;
+    targMap.checksum1 = 1506287797;
+    targMap.checksum2 = 151381096;
+    targMap.checksum3 = 2597371301;
 

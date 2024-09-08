@@ -1,207 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm_parameter_tuning/R2021b">
-  <slsa.mm.parametertuning.VariableRegistry type="slsa.mm.parametertuning.VariableRegistry" uuid="697f0ba9-b64c-4ef3-8e80-27f94708acdf">
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="7915aebd-5088-48c7-86b2-518003653ea1">
-      <blockPath>PrechargeModel/Stair Generator/Continuous/Output</blockPath>
+  <slsa.mm.parametertuning.VariableRegistry type="slsa.mm.parametertuning.VariableRegistry" uuid="56bd8355-dd0b-40c9-9392-549919aab291">
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="6c0daecb-83bc-41de-a331-82c2d51d015c">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/Constant1</blockPath>
       <parameterName>SampleTime</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="c2bd890c-8aa6-4f27-a91f-59dda3900348"/>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="fdd2f1df-27ba-447c-878c-5e0036a9f5e6"/>
       <tunabilityType>Nontunable</tunabilityType>
     </blockParameters>
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="d92c0020-d107-457b-a832-6a4eec7fd99b">
-      <blockPath>PrechargeModel/Stair Generator/Continuous/Constant1</blockPath>
-      <parameterName>SampleTime</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="c2bd890c-8aa6-4f27-a91f-59dda3900348"/>
-      <tunabilityType>Nontunable</tunabilityType>
-    </blockParameters>
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="71375f44-c477-4282-8d6f-7e31e62a95a8">
-      <blockPath>PrechargeModel/Stair Generator/Continuous/Constant</blockPath>
-      <parameterName>SampleTime</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="c2bd890c-8aa6-4f27-a91f-59dda3900348"/>
-      <tunabilityType>Nontunable</tunabilityType>
-    </blockParameters>
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="29b7721a-32f3-42fd-b531-2f26fb339de1">
-      <blockPath>PrechargeModel/Stair Generator/Continuous/While Iterator Subsystem/Detect Fall Nonpositive/Delay Input1</blockPath>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="14d17e4b-7ff5-4dc3-858c-65c377a93a16">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/Detect Fall Nonpositive/Delay Input1</blockPath>
       <parameterName>InitialCondition</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="4480f05d-066f-45e5-b5c9-f5ad55c61d38"/>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="c4060aeb-3e95-4235-854a-1f6c2b62f630"/>
       <tunabilityType>Nontunable</tunabilityType>
     </blockParameters>
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="92dce78d-b868-4634-96c2-501f11933174">
-      <blockPath>PrechargeModel/Stair Generator/Continuous/While Iterator Subsystem/Switch1</blockPath>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="a3171c4e-df73-4492-b2c5-5fe0ca3b8443">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/Constant</blockPath>
+      <parameterName>SampleTime</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="fdd2f1df-27ba-447c-878c-5e0036a9f5e6"/>
+      <tunabilityType>Nontunable</tunabilityType>
+    </blockParameters>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="93c73cc6-985b-4eea-9748-3738531d5285">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/Switch1</blockPath>
       <parameterName>Threshold</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="96102f47-5935-4beb-8f6f-578f7a562fa5"/>
-      <valueAttributes type="slsa.mm.parametertuning.ValueAttributes" uuid="99aa4abe-c74c-4ece-b7ca-d6518e169f1e">
+      <expression type="slsa.mm.parametertuning.Expression" uuid="83299b43-3bed-4589-9041-21375d2bc751"/>
+      <valueAttributes type="slsa.mm.parametertuning.ValueAttributes" uuid="dfa82e90-8da0-4271-a2d3-2317b799295d">
         <className>double</className>
         <dimensions>1</dimensions>
         <dimensions>1</dimensions>
       </valueAttributes>
     </blockParameters>
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="a44acad2-afb2-4fe6-a9ee-cf25ab248e41">
-      <blockPath>PrechargeModel/Stair Generator/Continuous/While Iterator Subsystem/Constant1</blockPath>
-      <parameterName>Value</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="1e801b72-726e-4495-95ea-e41b2f1341b8"/>
-      <valueAttributes type="slsa.mm.parametertuning.ValueAttributes" uuid="27d581d1-3f73-4c66-bcff-02dcb5b525b3">
-        <className>int8</className>
-        <dimensions>1</dimensions>
-        <dimensions>1</dimensions>
-      </valueAttributes>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="eafcf74c-6739-4b7a-9dcf-32674be041f8">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/Output</blockPath>
+      <parameterName>SampleTime</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="fdd2f1df-27ba-447c-878c-5e0036a9f5e6"/>
+      <tunabilityType>Nontunable</tunabilityType>
     </blockParameters>
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="5420316b-e2ac-4d87-9aed-421de47e5c02">
-      <blockPath>PrechargeModel/Stair Generator/Continuous/Output</blockPath>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="4243791d-d04d-49d7-8ffd-fdc1f853b77b">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/Output</blockPath>
       <parameterName>Value</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="6e2dd106-244c-407e-b63e-1122946692ef"/>
-      <valueAttributes type="slsa.mm.parametertuning.ValueAttributes" uuid="40b69746-c6f9-427a-bc1d-35b4ca87bb0e">
+      <expression type="slsa.mm.parametertuning.Expression" uuid="33362f8e-a423-44f2-83f0-dd9dae6a5563"/>
+      <valueAttributes type="slsa.mm.parametertuning.ValueAttributes" uuid="30ab01ea-0a86-432f-9619-46090e27de8e">
         <className>double</className>
         <dimensions>1</dimensions>
         <dimensions>5</dimensions>
       </valueAttributes>
     </blockParameters>
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="579242ee-dd76-4ae6-ac20-8a5ca7d54440">
-      <blockPath>PrechargeModel/Stair Generator/Continuous/Constant2</blockPath>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="e087ca87-f717-4a67-be08-40534371d87d">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/y</blockPath>
       <parameterName>SampleTime</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="c2bd890c-8aa6-4f27-a91f-59dda3900348"/>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="fdd2f1df-27ba-447c-878c-5e0036a9f5e6"/>
       <tunabilityType>Nontunable</tunabilityType>
     </blockParameters>
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="110e724a-645a-4402-87e3-105c5de54463">
-      <blockPath>PrechargeModel/Stair Generator/Continuous/Selector</blockPath>
-      <parameterName>InputPortWidth</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="a4ef2e4f-b740-4bf2-926e-fd14fb879c96"/>
-      <tunabilityType>Nontunable</tunabilityType>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="60afb941-7696-4094-bacb-78595438422f">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/Constant1</blockPath>
+      <parameterName>Value</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="becbfadc-7286-48d7-9a7a-7a63ba63c7f7"/>
+      <valueAttributes type="slsa.mm.parametertuning.ValueAttributes" uuid="111d485c-e35b-4d13-b394-2054d65e0f13">
+        <className>int8</className>
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+      </valueAttributes>
     </blockParameters>
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="ce21959b-3fb5-4374-963f-43d9e4921488">
-      <blockPath>PrechargeModel/Stair Generator/Continuous/Time</blockPath>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="ef6a45fc-edd9-4a95-b0fe-bd02230c40e7">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/Constant2</blockPath>
       <parameterName>SampleTime</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="c2bd890c-8aa6-4f27-a91f-59dda3900348"/>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="fdd2f1df-27ba-447c-878c-5e0036a9f5e6"/>
       <tunabilityType>Nontunable</tunabilityType>
     </blockParameters>
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="b743d81f-1f67-4a7a-be2a-a89f0d9871dc">
-      <blockPath>PrechargeModel/Stair Generator/Continuous/While Iterator Subsystem/Selector</blockPath>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="645303d3-5d13-4601-bad1-efde2db761ad">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/Selector</blockPath>
       <parameterName>InputPortWidth</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="1e801b72-726e-4495-95ea-e41b2f1341b8"/>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="0dd23d90-f445-4e26-8919-c3734fc7ce91"/>
       <tunabilityType>Nontunable</tunabilityType>
     </blockParameters>
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="70760c1c-cfde-4f00-a001-049ad352d835">
-      <blockPath>PrechargeModel/Stair Generator/Continuous/While Iterator Subsystem/While Iterator</blockPath>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="4c74b027-e351-4c5b-b63e-0fe819005fe8">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/Time</blockPath>
+      <parameterName>SampleTime</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="fdd2f1df-27ba-447c-878c-5e0036a9f5e6"/>
+      <tunabilityType>Nontunable</tunabilityType>
+    </blockParameters>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="7d9e9a91-75eb-4334-8a82-0dd9e4db4e9c">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/Selector</blockPath>
+      <parameterName>InputPortWidth</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="becbfadc-7286-48d7-9a7a-7a63ba63c7f7"/>
+      <tunabilityType>Nontunable</tunabilityType>
+    </blockParameters>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="7b24ab12-0265-40e7-ab30-d4beaf88fbfe">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/While Iterator</blockPath>
       <parameterName>MaxIters</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="1e801b72-726e-4495-95ea-e41b2f1341b8"/>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="becbfadc-7286-48d7-9a7a-7a63ba63c7f7"/>
       <tunabilityType>Nontunable</tunabilityType>
     </blockParameters>
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="93dcb00b-0551-43fa-8f0c-8c4cdeddcfa3">
-      <blockPath>PrechargeModel/Stair Generator/Continuous/y</blockPath>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="c0406da9-9f5e-459a-851f-181005140a73">
+      <blockPath>PrechargeModel/Pre-Charge Control Switch/y</blockPath>
       <parameterName>SampleTime</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="c2bd890c-8aa6-4f27-a91f-59dda3900348"/>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="fdd2f1df-27ba-447c-878c-5e0036a9f5e6"/>
       <tunabilityType>Nontunable</tunabilityType>
     </blockParameters>
-    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="e3044ebf-99de-4bef-b066-528f49918517">
-      <blockPath>PrechargeModel/Stair Generator/y</blockPath>
-      <parameterName>SampleTime</parameterName>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="c2bd890c-8aa6-4f27-a91f-59dda3900348"/>
-      <tunabilityType>Nontunable</tunabilityType>
-    </blockParameters>
-    <expressions type="slsa.mm.parametertuning.Expression" uuid="fcf69b85-0430-4aa9-af11-2a2b1d769269">
-      <expression>[0 1 0 0]</expression>
-      <users type="slsa.mm.parametertuning.VariableDefinition" uuid="558db470-43a4-425c-b023-e7f213ac77d7"/>
-    </expressions>
-    <expressions type="slsa.mm.parametertuning.Expression" uuid="4480f05d-066f-45e5-b5c9-f5ad55c61d38">
-      <expression>vinit</expression>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="29b7721a-32f3-42fd-b531-2f26fb339de1"/>
-      <variables type="slsa.mm.parametertuning.Variable" uuid="d6c24a53-8eb7-4ea5-8004-ed259a002496"/>
-    </expressions>
-    <expressions type="slsa.mm.parametertuning.Expression" uuid="cc7093de-6b2e-42a2-9219-4e98e67c6bab">
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="fa9184b8-1206-4745-9507-eb19fee3c68f">
       <expression>0</expression>
-      <users type="slsa.mm.parametertuning.VariableDefinition" uuid="82ab932a-012e-4f53-ae61-a4244833c759"/>
-      <users type="slsa.mm.parametertuning.VariableDefinition" uuid="e7e97674-5fb7-463a-9ec4-cbfc4c2c751d"/>
+      <users type="slsa.mm.parametertuning.VariableDefinition" uuid="c366d903-702e-4d7c-9a8f-0ee05f608947"/>
+      <users type="slsa.mm.parametertuning.VariableDefinition" uuid="b3787411-7659-419d-834f-bf1f61bfe6a3"/>
     </expressions>
-    <expressions type="slsa.mm.parametertuning.Expression" uuid="1e801b72-726e-4495-95ea-e41b2f1341b8">
-      <expression>length( TimeInput )</expression>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="a44acad2-afb2-4fe6-a9ee-cf25ab248e41"/>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="b743d81f-1f67-4a7a-be2a-a89f0d9871dc"/>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="70760c1c-cfde-4f00-a001-049ad352d835"/>
-      <variables type="slsa.mm.parametertuning.Variable" uuid="7e334545-ffb9-47f3-97c2-330d472dce09"/>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="c4060aeb-3e95-4235-854a-1f6c2b62f630">
+      <expression>vinit</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="14d17e4b-7ff5-4dc3-858c-65c377a93a16"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="1671dcc9-0ea5-40e4-8b74-41c2238d5f3e"/>
     </expressions>
-    <expressions type="slsa.mm.parametertuning.Expression" uuid="6e2dd106-244c-407e-b63e-1122946692ef">
-      <expression>[ 0, AmplitudeInput ]</expression>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="5420316b-e2ac-4d87-9aed-421de47e5c02"/>
-      <variables type="slsa.mm.parametertuning.Variable" uuid="5206658d-f2ba-4090-848e-f580fb525c35"/>
-    </expressions>
-    <expressions type="slsa.mm.parametertuning.Expression" uuid="96102f47-5935-4beb-8f6f-578f7a562fa5">
-      <expression>max( TimeInput )</expression>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="92dce78d-b868-4634-96c2-501f11933174"/>
-      <variables type="slsa.mm.parametertuning.Variable" uuid="7e334545-ffb9-47f3-97c2-330d472dce09"/>
-    </expressions>
-    <expressions type="slsa.mm.parametertuning.Expression" uuid="86c8bf8b-a43d-4540-b7e4-5e7a2ecfac0c">
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="895d2873-193a-4c9a-a139-bded65b9141a">
       <expression>[0 0.5 2 3]</expression>
-      <users type="slsa.mm.parametertuning.VariableDefinition" uuid="f6de3060-539a-4e6e-8ae6-10cbaf0dd044"/>
+      <users type="slsa.mm.parametertuning.VariableDefinition" uuid="6ef1af3a-9e4f-4bdf-804d-98cc2aabdaea"/>
     </expressions>
-    <expressions type="slsa.mm.parametertuning.Expression" uuid="c2bd890c-8aa6-4f27-a91f-59dda3900348">
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="33362f8e-a423-44f2-83f0-dd9dae6a5563">
+      <expression>[ 0, AmplitudeInput ]</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="4243791d-d04d-49d7-8ffd-fdc1f853b77b"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="d92bd83c-3ad8-41a6-b643-b45e4c867528"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="6b4af9ad-2049-452c-9f27-cf05877ec7a4">
+      <expression>[0 1 0 0]</expression>
+      <users type="slsa.mm.parametertuning.VariableDefinition" uuid="981d43ec-edf3-44f3-8ae3-ad9376292f52"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="83299b43-3bed-4589-9041-21375d2bc751">
+      <expression>max( TimeInput )</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="93c73cc6-985b-4eea-9748-3738531d5285"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="3d22f617-ed8d-4ef2-ae80-569151d1bd40"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="becbfadc-7286-48d7-9a7a-7a63ba63c7f7">
+      <expression>length( TimeInput )</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="60afb941-7696-4094-bacb-78595438422f"/>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="7d9e9a91-75eb-4334-8a82-0dd9e4db4e9c"/>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="7b24ab12-0265-40e7-ab30-d4beaf88fbfe"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="3d22f617-ed8d-4ef2-ae80-569151d1bd40"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="fdd2f1df-27ba-447c-878c-5e0036a9f5e6">
       <expression>SampleTime</expression>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="7915aebd-5088-48c7-86b2-518003653ea1"/>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="d92c0020-d107-457b-a832-6a4eec7fd99b"/>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="71375f44-c477-4282-8d6f-7e31e62a95a8"/>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="579242ee-dd76-4ae6-ac20-8a5ca7d54440"/>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="ce21959b-3fb5-4374-963f-43d9e4921488"/>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="e3044ebf-99de-4bef-b066-528f49918517"/>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="93dcb00b-0551-43fa-8f0c-8c4cdeddcfa3"/>
-      <variables type="slsa.mm.parametertuning.Variable" uuid="31870e19-94d7-477f-b744-28abd5401653"/>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="a3171c4e-df73-4492-b2c5-5fe0ca3b8443"/>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="4c74b027-e351-4c5b-b63e-0fe819005fe8"/>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="6c0daecb-83bc-41de-a331-82c2d51d015c"/>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="ef6a45fc-edd9-4a95-b0fe-bd02230c40e7"/>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="eafcf74c-6739-4b7a-9dcf-32674be041f8"/>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="c0406da9-9f5e-459a-851f-181005140a73"/>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="e087ca87-f717-4a67-be08-40534371d87d"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="b22e33b1-d515-40f6-acd8-bba9de2ddb16"/>
     </expressions>
-    <expressions type="slsa.mm.parametertuning.Expression" uuid="a4ef2e4f-b740-4bf2-926e-fd14fb879c96">
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="0dd23d90-f445-4e26-8919-c3734fc7ce91">
       <expression>length( AmplitudeInput ) + 1</expression>
-      <users type="slsa.mm.parametertuning.BlockParameter" uuid="110e724a-645a-4402-87e3-105c5de54463"/>
-      <variables type="slsa.mm.parametertuning.Variable" uuid="5206658d-f2ba-4090-848e-f580fb525c35"/>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="645303d3-5d13-4601-bad1-efde2db761ad"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="d92bd83c-3ad8-41a6-b643-b45e4c867528"/>
     </expressions>
     <name>PrechargeModel</name>
-    <variableDefinitions type="slsa.mm.parametertuning.VariableDefinition" uuid="82ab932a-012e-4f53-ae61-a4244833c759">
-      <variable type="slsa.mm.parametertuning.Variable" uuid="d6c24a53-8eb7-4ea5-8004-ed259a002496"/>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="cc7093de-6b2e-42a2-9219-4e98e67c6bab"/>
+    <variableDefinitions type="slsa.mm.parametertuning.VariableDefinition" uuid="c366d903-702e-4d7c-9a8f-0ee05f608947">
+      <variable type="slsa.mm.parametertuning.Variable" uuid="b22e33b1-d515-40f6-acd8-bba9de2ddb16"/>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="fa9184b8-1206-4745-9507-eb19fee3c68f"/>
     </variableDefinitions>
-    <variableDefinitions type="slsa.mm.parametertuning.VariableDefinition" uuid="f6de3060-539a-4e6e-8ae6-10cbaf0dd044">
-      <variable type="slsa.mm.parametertuning.Variable" uuid="7e334545-ffb9-47f3-97c2-330d472dce09"/>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="86c8bf8b-a43d-4540-b7e4-5e7a2ecfac0c"/>
+    <variableDefinitions type="slsa.mm.parametertuning.VariableDefinition" uuid="b3787411-7659-419d-834f-bf1f61bfe6a3">
+      <variable type="slsa.mm.parametertuning.Variable" uuid="1671dcc9-0ea5-40e4-8b74-41c2238d5f3e"/>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="fa9184b8-1206-4745-9507-eb19fee3c68f"/>
     </variableDefinitions>
-    <variableDefinitions type="slsa.mm.parametertuning.VariableDefinition" uuid="558db470-43a4-425c-b023-e7f213ac77d7">
-      <variable type="slsa.mm.parametertuning.Variable" uuid="5206658d-f2ba-4090-848e-f580fb525c35"/>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="fcf69b85-0430-4aa9-af11-2a2b1d769269"/>
+    <variableDefinitions type="slsa.mm.parametertuning.VariableDefinition" uuid="6ef1af3a-9e4f-4bdf-804d-98cc2aabdaea">
+      <variable type="slsa.mm.parametertuning.Variable" uuid="3d22f617-ed8d-4ef2-ae80-569151d1bd40"/>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="895d2873-193a-4c9a-a139-bded65b9141a"/>
     </variableDefinitions>
-    <variableDefinitions type="slsa.mm.parametertuning.VariableDefinition" uuid="e7e97674-5fb7-463a-9ec4-cbfc4c2c751d">
-      <variable type="slsa.mm.parametertuning.Variable" uuid="31870e19-94d7-477f-b744-28abd5401653"/>
-      <expression type="slsa.mm.parametertuning.Expression" uuid="cc7093de-6b2e-42a2-9219-4e98e67c6bab"/>
+    <variableDefinitions type="slsa.mm.parametertuning.VariableDefinition" uuid="981d43ec-edf3-44f3-8ae3-ad9376292f52">
+      <variable type="slsa.mm.parametertuning.Variable" uuid="d92bd83c-3ad8-41a6-b643-b45e4c867528"/>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="6b4af9ad-2049-452c-9f27-cf05877ec7a4"/>
     </variableDefinitions>
-    <variables type="slsa.mm.parametertuning.Variable" uuid="7e334545-ffb9-47f3-97c2-330d472dce09">
-      <definition type="slsa.mm.parametertuning.VariableDefinition" uuid="f6de3060-539a-4e6e-8ae6-10cbaf0dd044"/>
-      <expressions type="slsa.mm.parametertuning.Expression" uuid="1e801b72-726e-4495-95ea-e41b2f1341b8"/>
-      <expressions type="slsa.mm.parametertuning.Expression" uuid="96102f47-5935-4beb-8f6f-578f7a562fa5"/>
-      <name>TimeInput</name>
-      <workspace type="slsa.mm.parametertuning.Workspace" uuid="7dea7fd1-428a-4191-ac35-0c06b8a77baa"/>
-    </variables>
-    <variables type="slsa.mm.parametertuning.Variable" uuid="d6c24a53-8eb7-4ea5-8004-ed259a002496">
-      <definition type="slsa.mm.parametertuning.VariableDefinition" uuid="82ab932a-012e-4f53-ae61-a4244833c759"/>
-      <expressions type="slsa.mm.parametertuning.Expression" uuid="4480f05d-066f-45e5-b5c9-f5ad55c61d38"/>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="1671dcc9-0ea5-40e4-8b74-41c2238d5f3e">
+      <definition type="slsa.mm.parametertuning.VariableDefinition" uuid="b3787411-7659-419d-834f-bf1f61bfe6a3"/>
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="c4060aeb-3e95-4235-854a-1f6c2b62f630"/>
       <name>vinit</name>
-      <workspace type="slsa.mm.parametertuning.Workspace" uuid="64e47764-c240-470e-b3a2-d3e867140041"/>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="dc97ed3b-8a99-4cdf-a08a-9a5df28697f3"/>
     </variables>
-    <variables type="slsa.mm.parametertuning.Variable" uuid="5206658d-f2ba-4090-848e-f580fb525c35">
-      <definition type="slsa.mm.parametertuning.VariableDefinition" uuid="558db470-43a4-425c-b023-e7f213ac77d7"/>
-      <expressions type="slsa.mm.parametertuning.Expression" uuid="a4ef2e4f-b740-4bf2-926e-fd14fb879c96"/>
-      <expressions type="slsa.mm.parametertuning.Expression" uuid="6e2dd106-244c-407e-b63e-1122946692ef"/>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="3d22f617-ed8d-4ef2-ae80-569151d1bd40">
+      <definition type="slsa.mm.parametertuning.VariableDefinition" uuid="6ef1af3a-9e4f-4bdf-804d-98cc2aabdaea"/>
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="becbfadc-7286-48d7-9a7a-7a63ba63c7f7"/>
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="83299b43-3bed-4589-9041-21375d2bc751"/>
+      <name>TimeInput</name>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="de8a0137-941b-4335-a47c-91a1095f4117"/>
+    </variables>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="d92bd83c-3ad8-41a6-b643-b45e4c867528">
+      <definition type="slsa.mm.parametertuning.VariableDefinition" uuid="981d43ec-edf3-44f3-8ae3-ad9376292f52"/>
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="0dd23d90-f445-4e26-8919-c3734fc7ce91"/>
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="33362f8e-a423-44f2-83f0-dd9dae6a5563"/>
       <name>AmplitudeInput</name>
-      <workspace type="slsa.mm.parametertuning.Workspace" uuid="7dea7fd1-428a-4191-ac35-0c06b8a77baa"/>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="de8a0137-941b-4335-a47c-91a1095f4117"/>
     </variables>
-    <variables type="slsa.mm.parametertuning.Variable" uuid="31870e19-94d7-477f-b744-28abd5401653">
-      <definition type="slsa.mm.parametertuning.VariableDefinition" uuid="e7e97674-5fb7-463a-9ec4-cbfc4c2c751d"/>
-      <expressions type="slsa.mm.parametertuning.Expression" uuid="c2bd890c-8aa6-4f27-a91f-59dda3900348"/>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="b22e33b1-d515-40f6-acd8-bba9de2ddb16">
+      <definition type="slsa.mm.parametertuning.VariableDefinition" uuid="c366d903-702e-4d7c-9a8f-0ee05f608947"/>
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="fdd2f1df-27ba-447c-878c-5e0036a9f5e6"/>
       <name>SampleTime</name>
-      <workspace type="slsa.mm.parametertuning.Workspace" uuid="7dea7fd1-428a-4191-ac35-0c06b8a77baa"/>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="de8a0137-941b-4335-a47c-91a1095f4117"/>
     </variables>
-    <workspaces type="slsa.mm.parametertuning.Workspace" uuid="64e47764-c240-470e-b3a2-d3e867140041">
+    <workspaces type="slsa.mm.parametertuning.Workspace" uuid="dc97ed3b-8a99-4cdf-a08a-9a5df28697f3">
       <name>PrechargeModel:43:80</name>
       <type>MASK</type>
-      <variables type="slsa.mm.parametertuning.Variable" uuid="d6c24a53-8eb7-4ea5-8004-ed259a002496"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="1671dcc9-0ea5-40e4-8b74-41c2238d5f3e"/>
     </workspaces>
-    <workspaces type="slsa.mm.parametertuning.Workspace" uuid="7dea7fd1-428a-4191-ac35-0c06b8a77baa">
+    <workspaces type="slsa.mm.parametertuning.Workspace" uuid="de8a0137-941b-4335-a47c-91a1095f4117">
       <name>PrechargeModel:43</name>
       <type>MASK</type>
-      <variables type="slsa.mm.parametertuning.Variable" uuid="7e334545-ffb9-47f3-97c2-330d472dce09"/>
-      <variables type="slsa.mm.parametertuning.Variable" uuid="5206658d-f2ba-4090-848e-f580fb525c35"/>
-      <variables type="slsa.mm.parametertuning.Variable" uuid="31870e19-94d7-477f-b744-28abd5401653"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="3d22f617-ed8d-4ef2-ae80-569151d1bd40"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="d92bd83c-3ad8-41a6-b643-b45e4c867528"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="b22e33b1-d515-40f6-acd8-bba9de2ddb16"/>
     </workspaces>
   </slsa.mm.parametertuning.VariableRegistry>
 </MF0>

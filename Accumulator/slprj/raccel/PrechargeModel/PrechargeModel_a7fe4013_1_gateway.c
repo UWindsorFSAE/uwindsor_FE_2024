@@ -7,9 +7,9 @@
 #include "PrechargeModel_a7fe4013_1.h"
 #include "PrechargeModel_a7fe4013_1_gateway.h"
 void PrechargeModel_a7fe4013_1_gateway ( void ) { NeModelParameters
-modelparams = { ( enum NeSolverTypeTag ) 0 , 0.001 , 0.001 , 0.001 , TRUE ,
-FALSE , ( enum NeModifyAbsTolTag ) 2 , 0.001 , 0.0 , FALSE , FALSE , FALSE ,
-( enum SscLoggingSettingTag ) 0 , 644267892.0 , FALSE , FALSE , FALSE } ;
+modelparams = { ( enum NeSolverTypeTag ) 1 , 0.001 , 0.001 , 0.001 , TRUE ,
+FALSE , ( enum NeModifyAbsTolTag ) 0 , 0.001 , 0.0 , FALSE , FALSE , FALSE ,
+( enum SscLoggingSettingTag ) 0 , 644272783.0 , FALSE , FALSE , FALSE } ;
 NeSolverParameters solverparams = { FALSE , FALSE , TRUE , FALSE , FALSE ,
 0.001 , 0.001 , 1e-09 , FALSE , FALSE , 100U , FALSE , 1U , ( enum
 NeConsistencySolverTag ) 2 , ( enum NeIndexReductionMethodTag ) 1 , FALSE ,

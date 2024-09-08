@@ -67,13 +67,13 @@ hbvvke1n10 ) , 0U * sizeof ( real_T ) , nesl_save_simdata ,
 nesl_restore_simdata ) ; simulationData = nesl_create_simulation_data ( ) ;
 rtDW . gelipinn1a = ( void * ) simulationData ; diagnosticManager =
 rtw_create_diagnostics ( ) ; rtDW . cxiazli5ii = ( void * ) diagnosticManager
-; modelParameters . mSolverType = NE_SOLVER_TYPE_DAE ; modelParameters .
+; modelParameters . mSolverType = NE_SOLVER_TYPE_ODE ; modelParameters .
 mSolverAbsTol = 0.001 ; modelParameters . mSolverRelTol = 0.001 ;
-modelParameters . mSolverModifyAbsTol = NE_MODIFY_ABS_TOL_MAYBE ;
+modelParameters . mSolverModifyAbsTol = NE_MODIFY_ABS_TOL_NO ;
 modelParameters . mStartTime = 0.0 ; modelParameters . mLoadInitialState =
 false ; modelParameters . mUseSimState = false ; modelParameters .
 mLinTrimCompile = false ; modelParameters . mLoggingMode = SSC_LOGGING_OFF ;
-modelParameters . mRTWModifiedTimeStamp = 6.44267892E+8 ; modelParameters .
+modelParameters . mRTWModifiedTimeStamp = 6.44272783E+8 ; modelParameters .
 mZcDisabled = false ; modelParameters . mUseModelRefSolver = false ;
 modelParameters . mTargetFPGAHIL = false ; tmp_e = 0.001 ; modelParameters .
 mSolverTolerance = tmp_e ; tmp_e = 0.0 ; modelParameters . mFixedStepSize =
@@ -139,13 +139,13 @@ pfon4t4jjl ) , 0U * sizeof ( real_T ) , nesl_save_simdata ,
 nesl_restore_simdata ) ; simulationData = nesl_create_simulation_data ( ) ;
 rtDW . elb0r4kd24 = ( void * ) simulationData ; diagnosticManager =
 rtw_create_diagnostics ( ) ; rtDW . pr5kzcttse = ( void * ) diagnosticManager
-; modelParameters_p . mSolverType = NE_SOLVER_TYPE_DAE ; modelParameters_p .
+; modelParameters_p . mSolverType = NE_SOLVER_TYPE_ODE ; modelParameters_p .
 mSolverAbsTol = 0.001 ; modelParameters_p . mSolverRelTol = 0.001 ;
-modelParameters_p . mSolverModifyAbsTol = NE_MODIFY_ABS_TOL_MAYBE ;
+modelParameters_p . mSolverModifyAbsTol = NE_MODIFY_ABS_TOL_NO ;
 modelParameters_p . mStartTime = 0.0 ; modelParameters_p . mLoadInitialState
 = false ; modelParameters_p . mUseSimState = false ; modelParameters_p .
 mLinTrimCompile = false ; modelParameters_p . mLoggingMode = SSC_LOGGING_OFF
-; modelParameters_p . mRTWModifiedTimeStamp = 6.44267892E+8 ;
+; modelParameters_p . mRTWModifiedTimeStamp = 6.44272783E+8 ;
 modelParameters_p . mZcDisabled = false ; modelParameters_p .
 mUseModelRefSolver = false ; modelParameters_p . mTargetFPGAHIL = false ;
 tmp_e = 0.001 ; modelParameters_p . mSolverTolerance = tmp_e ; tmp_e = 0.0 ;
@@ -170,46 +170,49 @@ real_T tmp_f [ 26 ] ; real_T tmp [ 12 ] ; real_T tmp_g [ 12 ] ; real_T tmp_i
 [ 12 ] ; real_T time ; real_T time_e ; real_T time_g ; real_T time_i ; real_T
 time_m ; real_T time_p ; int32_T tmp_e ; int_T tmp_c [ 5 ] ; int_T tmp_j [ 4
 ] ; int_T tmp_m [ 4 ] ; int_T tmp_p [ 4 ] ; int8_T memasuedaj [ 4 ] ; int8_T
-fdk4ps5zkb ; int8_T s15_iter ; boolean_T anz44mi22v ; boolean_T iw4wsgify2 ;
+fdk4ps5zkb ; int8_T s11_iter ; boolean_T anz44mi22v ; boolean_T iw4wsgify2 ;
 _rtZCSV = ( ( ZCV * ) ssGetSolverZcSignalVector ( rtS ) ) ; if (
 ssIsSampleHit ( rtS , 1 , 0 ) ) { rtDW . l0224yqaan = ( ssGetTaskTime ( rtS ,
 1 ) >= rtP . HVControlSwitch_Time ) ; if ( rtDW . l0224yqaan == 1 ) { rtB .
 pjlmc1lzp1 = rtP . HVControlSwitch_YFinal ; } else { rtB . pjlmc1lzp1 = rtP .
-HVControlSwitch_Y0 ; } rtDW . oou11isfot = ( ssGetTaskTime ( rtS , 1 ) >= rtP
-. HVControlSwitch_Time_d3xzd30hb0 ) ; if ( rtDW . oou11isfot == 1 ) { rtB .
+HVControlSwitch_Y0 ; } } rtB . asepqqecqj [ 0 ] = rtB . pjlmc1lzp1 ; rtB .
+asepqqecqj [ 1 ] = 0.0 ; rtB . asepqqecqj [ 2 ] = 0.0 ; if (
+ssIsMajorTimeStep ( rtS ) ) { rtDW . aaswsr1rcu [ 0 ] = ! ( rtB . asepqqecqj
+[ 0 ] == rtDW . aaswsr1rcu [ 1 ] ) ; rtDW . aaswsr1rcu [ 1 ] = rtB .
+asepqqecqj [ 0 ] ; } rtB . asepqqecqj [ 0 ] = rtDW . aaswsr1rcu [ 1 ] ; rtB .
+asepqqecqj [ 3 ] = rtDW . aaswsr1rcu [ 0 ] ; if ( ssIsSampleHit ( rtS , 1 , 0
+) ) { rtDW . oou11isfot = ( ssGetTaskTime ( rtS , 1 ) >= rtP .
+HVControlSwitch_Time_d3xzd30hb0 ) ; if ( rtDW . oou11isfot == 1 ) { rtB .
 nrxejncqrw = rtP . HVControlSwitch_YFinal_mmqozp25oj ; } else { rtB .
-nrxejncqrw = rtP . HVControlSwitch_Y0_hwjg3kkkyh ; } } rtB . asepqqecqj [ 0 ]
-= rtB . pjlmc1lzp1 ; rtB . asepqqecqj [ 1 ] = 0.0 ; rtB . asepqqecqj [ 2 ] =
-0.0 ; if ( ssIsMajorTimeStep ( rtS ) ) { rtDW . aaswsr1rcu [ 0 ] = ! ( rtB .
-asepqqecqj [ 0 ] == rtDW . aaswsr1rcu [ 1 ] ) ; rtDW . aaswsr1rcu [ 1 ] = rtB
-. asepqqecqj [ 0 ] ; } rtB . asepqqecqj [ 0 ] = rtDW . aaswsr1rcu [ 1 ] ; rtB
-. asepqqecqj [ 3 ] = rtDW . aaswsr1rcu [ 0 ] ; rtB . ifpoliolwo [ 0 ] = rtB .
-nrxejncqrw ; rtB . ifpoliolwo [ 1 ] = 0.0 ; rtB . ifpoliolwo [ 2 ] = 0.0 ; if
-( ssIsMajorTimeStep ( rtS ) ) { rtDW . argz0f5dqi [ 0 ] = ! ( rtB .
+nrxejncqrw = rtP . HVControlSwitch_Y0_hwjg3kkkyh ; } } rtB . ifpoliolwo [ 0 ]
+= rtB . nrxejncqrw ; rtB . ifpoliolwo [ 1 ] = 0.0 ; rtB . ifpoliolwo [ 2 ] =
+0.0 ; if ( ssIsMajorTimeStep ( rtS ) ) { rtDW . argz0f5dqi [ 0 ] = ! ( rtB .
 ifpoliolwo [ 0 ] == rtDW . argz0f5dqi [ 1 ] ) ; rtDW . argz0f5dqi [ 1 ] = rtB
 . ifpoliolwo [ 0 ] ; } rtB . ifpoliolwo [ 0 ] = rtDW . argz0f5dqi [ 1 ] ; rtB
 . ifpoliolwo [ 3 ] = rtDW . argz0f5dqi [ 0 ] ; if ( ssIsSampleHit ( rtS , 1 ,
-0 ) ) { if ( rtP . StairGenerator_RepeatPattern > rtP . Switch_Threshold ) {
-rtB . nxlv1serga = rtP . StairGenerator_TimeInput [ 3 ] ; } else { rtB .
-nxlv1serga = rtP . Constant1_Value ; } } rtB . bqza00cyqn = muDoubleScalarMod
-( ssGetT ( rtS ) , rtB . nxlv1serga ) ; if ( ssIsSampleHit ( rtS , 1 , 0 ) )
-{ if ( ssIsModeUpdateTimeStep ( rtS ) ) { rtDW . dmyikon5da [ 0 ] = ( rtB .
-bqza00cyqn >= rtP . StairGenerator_TimeInput [ 0 ] ) ; rtDW . dmyikon5da [ 1
-] = ( rtB . bqza00cyqn >= rtP . StairGenerator_TimeInput [ 1 ] ) ; rtDW .
-dmyikon5da [ 2 ] = ( rtB . bqza00cyqn >= rtP . StairGenerator_TimeInput [ 2 ]
-) ; rtDW . dmyikon5da [ 3 ] = ( rtB . bqza00cyqn >= rtP .
-StairGenerator_TimeInput [ 3 ] ) ; } memasuedaj [ 0 ] = ( int8_T ) rtDW .
-dmyikon5da [ 0 ] ; memasuedaj [ 1 ] = ( int8_T ) rtDW . dmyikon5da [ 1 ] ;
-memasuedaj [ 2 ] = ( int8_T ) rtDW . dmyikon5da [ 2 ] ; memasuedaj [ 3 ] = (
-int8_T ) rtDW . dmyikon5da [ 3 ] ; s15_iter = 1 ;
+0 ) ) { if ( rtP . PreChargeControlSwitch_RepeatPattern > rtP .
+Switch_Threshold ) { rtB . nxlv1serga = rtP .
+PreChargeControlSwitch_TimeInput [ 3 ] ; } else { rtB . nxlv1serga = rtP .
+Constant1_Value ; } } rtB . bqza00cyqn = muDoubleScalarMod ( ssGetT ( rtS ) ,
+rtB . nxlv1serga ) ; if ( ssIsSampleHit ( rtS , 1 , 0 ) ) { if (
+ssIsModeUpdateTimeStep ( rtS ) ) { rtDW . dmyikon5da [ 0 ] = ( rtB .
+bqza00cyqn >= rtP . PreChargeControlSwitch_TimeInput [ 0 ] ) ; rtDW .
+dmyikon5da [ 1 ] = ( rtB . bqza00cyqn >= rtP .
+PreChargeControlSwitch_TimeInput [ 1 ] ) ; rtDW . dmyikon5da [ 2 ] = ( rtB .
+bqza00cyqn >= rtP . PreChargeControlSwitch_TimeInput [ 2 ] ) ; rtDW .
+dmyikon5da [ 3 ] = ( rtB . bqza00cyqn >= rtP .
+PreChargeControlSwitch_TimeInput [ 3 ] ) ; } memasuedaj [ 0 ] = ( int8_T )
+rtDW . dmyikon5da [ 0 ] ; memasuedaj [ 1 ] = ( int8_T ) rtDW . dmyikon5da [ 1
+] ; memasuedaj [ 2 ] = ( int8_T ) rtDW . dmyikon5da [ 2 ] ; memasuedaj [ 3 ]
+= ( int8_T ) rtDW . dmyikon5da [ 3 ] ; s11_iter = 1 ;
 ssSetBlockStateForSolverChangedAtMajorStep ( rtS ) ; rtDW . nfwbh1ti3i = rtP
-. DetectFallNonpositive_vinit ; do { iw4wsgify2 = ( memasuedaj [ s15_iter - 1
+. DetectFallNonpositive_vinit ; do { iw4wsgify2 = ( memasuedaj [ s11_iter - 1
 ] <= rtP . Constant_Value ) ; anz44mi22v = ( ( int32_T ) iw4wsgify2 > (
 int32_T ) rtDW . nfwbh1ti3i ) ; if ( anz44mi22v ) { fdk4ps5zkb = ( int8_T ) (
-s15_iter - rtP . Constant2_Value ) ; } else if ( rtB . bqza00cyqn >= rtP .
+s11_iter - rtP . Constant2_Value ) ; } else if ( rtB . bqza00cyqn >= rtP .
 Switch1_Threshold ) { fdk4ps5zkb = rtP . Constant1_Value_dujvdtfujh ; } else
 { fdk4ps5zkb = rtP . Constant3_Value ; } rtDW . nfwbh1ti3i = iw4wsgify2 ;
-s15_iter ++ ; } while ( ( ! anz44mi22v ) && ( s15_iter <= 4 ) ) ; rtB .
+s11_iter ++ ; } while ( ( ! anz44mi22v ) && ( s11_iter <= 4 ) ) ; rtB .
 h5s12bgqxk = rtP . Output_Value [ fdk4ps5zkb ] ; } rtB . p15kjgtpsv [ 0 ] =
 rtB . h5s12bgqxk ; rtB . p15kjgtpsv [ 1 ] = 0.0 ; rtB . p15kjgtpsv [ 2 ] =
 0.0 ; if ( ssIsMajorTimeStep ( rtS ) ) { rtDW . fnx34i5x5n [ 0 ] = ! ( rtB .
@@ -497,13 +500,14 @@ diagnosticManager ; NeuDiagnosticTree * diagnosticTree ; ZCV * _rtZCSV ; char
 _rtZCSV -> n0mgwbn0co = ssGetT ( rtS ) - rtP . HVControlSwitch_Time ; _rtZCSV
 -> px5q0ifs0m = ssGetT ( rtS ) - rtP . HVControlSwitch_Time_d3xzd30hb0 ;
 _rtZCSV -> gblnr0iypr [ 0 ] = rtB . bqza00cyqn - rtP .
-StairGenerator_TimeInput [ 0 ] ; _rtZCSV -> gblnr0iypr [ 1 ] = rtB .
-bqza00cyqn - rtP . StairGenerator_TimeInput [ 1 ] ; _rtZCSV -> gblnr0iypr [ 2
-] = rtB . bqza00cyqn - rtP . StairGenerator_TimeInput [ 2 ] ; _rtZCSV ->
-gblnr0iypr [ 3 ] = rtB . bqza00cyqn - rtP . StairGenerator_TimeInput [ 3 ] ;
-simulationData = ( NeslSimulationData * ) rtDW . gelipinn1a ; time = ssGetT (
-rtS ) ; simulationData -> mData -> mTime . mN = 1 ; simulationData -> mData
--> mTime . mX = & time ; simulationData -> mData -> mContStates . mN = 2 ;
+PreChargeControlSwitch_TimeInput [ 0 ] ; _rtZCSV -> gblnr0iypr [ 1 ] = rtB .
+bqza00cyqn - rtP . PreChargeControlSwitch_TimeInput [ 1 ] ; _rtZCSV ->
+gblnr0iypr [ 2 ] = rtB . bqza00cyqn - rtP . PreChargeControlSwitch_TimeInput
+[ 2 ] ; _rtZCSV -> gblnr0iypr [ 3 ] = rtB . bqza00cyqn - rtP .
+PreChargeControlSwitch_TimeInput [ 3 ] ; simulationData = (
+NeslSimulationData * ) rtDW . gelipinn1a ; time = ssGetT ( rtS ) ;
+simulationData -> mData -> mTime . mN = 1 ; simulationData -> mData -> mTime
+. mX = & time ; simulationData -> mData -> mContStates . mN = 2 ;
 simulationData -> mData -> mContStates . mX = & rtX . mmg5234zf5 [ 0 ] ;
 simulationData -> mData -> mDiscStates . mN = 9 ; simulationData -> mData ->
 mDiscStates . mX = & rtDW . gdnhhqi5jl [ 0 ] ; simulationData -> mData ->
@@ -697,25 +701,25 @@ char_T * blockType [ 3 ] = { "SimscapeExecutionBlock" ,
 "SimscapeExecutionBlock" , "Scope" , } ; static const char_T * blockPath [ 3
 ] = { "PrechargeModel/Solver Configuration/EVAL_KEY/STATE_1" ,
 "PrechargeModel/Solver Configuration/EVAL_KEY/OUTPUT_1_0" ,
-"PrechargeModel/Scope" , } ; static const int reason [ 3 ] = { 0 , 0 , 0 , }
-; for ( subs [ 0 ] = 0 ; subs [ 0 ] < 3 ; ++ ( subs [ 0 ] ) ) { subs [ 1 ] =
-0 ; offset = mxCalcSingleSubscript ( data , 2 , subs ) ; mxSetCell ( data ,
-offset , mxCreateString ( blockType [ subs [ 0 ] ] ) ) ; subs [ 1 ] = 1 ;
-offset = mxCalcSingleSubscript ( data , 2 , subs ) ; mxSetCell ( data ,
-offset , mxCreateString ( blockPath [ subs [ 0 ] ] ) ) ; subs [ 1 ] = 2 ;
-offset = mxCalcSingleSubscript ( data , 2 , subs ) ; mxSetCell ( data ,
-offset , mxCreateDoubleScalar ( ( real_T ) reason [ subs [ 0 ] ] ) ) ; } }
-return data ; } void MdlInitializeSizes ( void ) { ssSetNumContStates ( rtS ,
-2 ) ; ssSetNumPeriodicContStates ( rtS , 0 ) ; ssSetNumY ( rtS , 0 ) ;
-ssSetNumU ( rtS , 0 ) ; ssSetDirectFeedThrough ( rtS , 0 ) ;
-ssSetNumSampleTimes ( rtS , 2 ) ; ssSetNumBlocks ( rtS , 50 ) ;
+"PrechargeModel/Current//Voltage" , } ; static const int reason [ 3 ] = { 0 ,
+0 , 0 , } ; for ( subs [ 0 ] = 0 ; subs [ 0 ] < 3 ; ++ ( subs [ 0 ] ) ) {
+subs [ 1 ] = 0 ; offset = mxCalcSingleSubscript ( data , 2 , subs ) ;
+mxSetCell ( data , offset , mxCreateString ( blockType [ subs [ 0 ] ] ) ) ;
+subs [ 1 ] = 1 ; offset = mxCalcSingleSubscript ( data , 2 , subs ) ;
+mxSetCell ( data , offset , mxCreateString ( blockPath [ subs [ 0 ] ] ) ) ;
+subs [ 1 ] = 2 ; offset = mxCalcSingleSubscript ( data , 2 , subs ) ;
+mxSetCell ( data , offset , mxCreateDoubleScalar ( ( real_T ) reason [ subs [
+0 ] ] ) ) ; } } return data ; } void MdlInitializeSizes ( void ) {
+ssSetNumContStates ( rtS , 2 ) ; ssSetNumPeriodicContStates ( rtS , 0 ) ;
+ssSetNumY ( rtS , 0 ) ; ssSetNumU ( rtS , 0 ) ; ssSetDirectFeedThrough ( rtS
+, 0 ) ; ssSetNumSampleTimes ( rtS , 2 ) ; ssSetNumBlocks ( rtS , 50 ) ;
 ssSetNumBlockIO ( rtS , 11 ) ; ssSetNumBlockParams ( rtS , 25 ) ; } void
 MdlInitializeSampleTimes ( void ) { ssSetSampleTime ( rtS , 0 , 0.0 ) ;
 ssSetSampleTime ( rtS , 1 , 0.0 ) ; ssSetOffsetTime ( rtS , 0 , 0.0 ) ;
 ssSetOffsetTime ( rtS , 1 , 1.0 ) ; } void raccel_set_checksum ( ) {
-ssSetChecksumVal ( rtS , 0 , 3405627555U ) ; ssSetChecksumVal ( rtS , 1 ,
-861820321U ) ; ssSetChecksumVal ( rtS , 2 , 3847794471U ) ; ssSetChecksumVal
-( rtS , 3 , 3409354729U ) ; }
+ssSetChecksumVal ( rtS , 0 , 2535319868U ) ; ssSetChecksumVal ( rtS , 1 ,
+1506287797U ) ; ssSetChecksumVal ( rtS , 2 , 151381096U ) ; ssSetChecksumVal
+( rtS , 3 , 2597371301U ) ; }
 #if defined(_MSC_VER)
 #pragma optimize( "", off )
 #endif
@@ -786,7 +790,7 @@ rt_LoggedStateBlockNames [ ] = { "PrechargeModel/TS Capacitor" ,
 "PrechargeModel/Solver\nConfiguration/EVAL_KEY/INPUT_3_1_1" ,
 "PrechargeModel/Solver\nConfiguration/EVAL_KEY/INPUT_1_1_1" ,
 "PrechargeModel/Solver\nConfiguration/EVAL_KEY/STATE_1" ,
- "PrechargeModel/Stair Generator/Continuous/While Iterator\nSubsystem/Detect Fall\nNonpositive/Delay Input1"
+ "PrechargeModel/Pre-Charge\nControl Switch/Continuous/While Iterator\nSubsystem/Detect Fall\nNonpositive/Delay Input1"
 } ; static const char_T * rt_LoggedStateNames [ ] = {
 "PrechargeModel.TS_Capacitor.vc" ,
 "PrechargeModel.x600V_HV_Battery_Pack.charge" , "Discrete" , "Discrete" ,
@@ -853,12 +857,12 @@ ssSetOutputTimesOnly ( rtS , 0 ) ; ssSetOutputTimesIndex ( rtS , 0 ) ;
 ssSetZCCacheNeedsReset ( rtS , 1 ) ; ssSetDerivCacheNeedsReset ( rtS , 0 ) ;
 ssSetNumNonContDerivSigInfos ( rtS , 3 ) ; ssSetNonContDerivSigInfos ( rtS ,
 nonContDerivSigInfo ) ; ssSetSolverInfo ( rtS , & slvrInfo ) ;
-ssSetSolverName ( rtS , "VariableStepAuto" ) ; ssSetVariableStepSolver ( rtS
-, 1 ) ; ssSetSolverConsistencyChecking ( rtS , 0 ) ;
-ssSetSolverAdaptiveZcDetection ( rtS , 0 ) ; ssSetSolverRobustResetMethod (
-rtS , 0 ) ; _ssSetSolverUpdateJacobianAtReset ( rtS , true ) ;
-ssSetAbsTolVector ( rtS , absTol ) ; ssSetAbsTolControlVector ( rtS ,
-absTolControl ) ; ssSetSolverAbsTol_Obsolete ( rtS , absTol ) ;
+ssSetSolverName ( rtS , "ode23tb" ) ; ssSetVariableStepSolver ( rtS , 1 ) ;
+ssSetSolverConsistencyChecking ( rtS , 0 ) ; ssSetSolverAdaptiveZcDetection (
+rtS , 0 ) ; ssSetSolverRobustResetMethod ( rtS , 0 ) ;
+_ssSetSolverUpdateJacobianAtReset ( rtS , true ) ; ssSetAbsTolVector ( rtS ,
+absTol ) ; ssSetAbsTolControlVector ( rtS , absTolControl ) ;
+ssSetSolverAbsTol_Obsolete ( rtS , absTol ) ;
 ssSetSolverAbsTolControl_Obsolete ( rtS , absTolControl ) ;
 ssSetJacobianPerturbationBoundsMinVec ( rtS , contStateJacPerturbBoundMinVec
 ) ; ssSetJacobianPerturbationBoundsMaxVec ( rtS ,
@@ -880,9 +884,9 @@ contStatesDisabled ) ; ssSetSolverMaxConsecutiveMinStep ( rtS , 1 ) ; } {
 ZCSigState * zc = ( ZCSigState * ) & rtPrevZCX ; ssSetPrevZCSigState ( rtS ,
 zc ) ; } { rtPrevZCX . jdg42luxap = UNINITIALIZED_ZCSIG ; rtPrevZCX .
 iiggpa4ztk = UNINITIALIZED_ZCSIG ; rtPrevZCX . jggsb5cnar =
-UNINITIALIZED_ZCSIG ; } ssSetChecksumVal ( rtS , 0 , 3405627555U ) ;
-ssSetChecksumVal ( rtS , 1 , 861820321U ) ; ssSetChecksumVal ( rtS , 2 ,
-3847794471U ) ; ssSetChecksumVal ( rtS , 3 , 3409354729U ) ; { static const
+UNINITIALIZED_ZCSIG ; } ssSetChecksumVal ( rtS , 0 , 2535319868U ) ;
+ssSetChecksumVal ( rtS , 1 , 1506287797U ) ; ssSetChecksumVal ( rtS , 2 ,
+151381096U ) ; ssSetChecksumVal ( rtS , 3 , 2597371301U ) ; { static const
 sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE ; static RTWExtModeInfo
 rt_ExtModeInfo ; static const sysRanDType * systemRan [ 4 ] ;
 gblRTWExtModeInfo = & rt_ExtModeInfo ; ssSetRTWExtModeInfo ( rtS , &

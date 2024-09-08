@@ -28,8 +28,8 @@ i0ge3te0zu [ 0 ] ) , 10 , 0 , 6 } , { ( char_T * ) ( & rtDW . nfwbh1ti3i ) ,
 ( char_T * ) ( & rtDW . dmyikon5da [ 0 ] ) , 8 , 0 , 6 } } ; static
 DataTypeTransitionTable rtBTransTable = { 7U , rtBTransitions } ; static
 DataTypeTransition rtPTransitions [ ] = { { ( char_T * ) ( & rtP .
-StairGenerator_RepeatPattern ) , 0 , 0 , 5 } , { ( char_T * ) ( & rtP .
-DetectFallNonpositive_vinit ) , 8 , 0 , 1 } , { ( char_T * ) ( & rtP .
+PreChargeControlSwitch_RepeatPattern ) , 0 , 0 , 5 } , { ( char_T * ) ( & rtP
+. DetectFallNonpositive_vinit ) , 8 , 0 , 1 } , { ( char_T * ) ( & rtP .
 Switch1_Threshold ) , 0 , 0 , 14 } , { ( char_T * ) ( & rtP . Index_Y0 ) , 2
 , 0 , 4 } , { ( char_T * ) ( & rtP . Constant_Value ) , 3 , 0 , 1 } } ;
 static DataTypeTransitionTable rtPTransTable = { 5U , rtPTransitions } ;

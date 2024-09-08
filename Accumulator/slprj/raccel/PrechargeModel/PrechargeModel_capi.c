@@ -29,55 +29,55 @@ static const rtwCAPI_Signals rtBlockSignals [ ] = { { 0 , 0 , TARGET_STRING (
 "PrechargeModel/HV+  Control Switch" ) , TARGET_STRING ( "" ) , 0 , 0 , 0 , 0
 , 0 } , { 1 , 0 , TARGET_STRING ( "PrechargeModel/HV- Control Switch" ) ,
 TARGET_STRING ( "" ) , 0 , 0 , 0 , 0 , 0 } , { 2 , 0 , TARGET_STRING (
+"PrechargeModel/Pre-Charge Control Switch/Continuous/Math Function" ) ,
+TARGET_STRING ( "" ) , 0 , 0 , 0 , 0 , 1 } , { 3 , 0 , TARGET_STRING (
+"PrechargeModel/Pre-Charge Control Switch/Continuous/Selector" ) ,
+TARGET_STRING ( "" ) , 0 , 0 , 0 , 0 , 0 } , { 4 , 0 , TARGET_STRING (
+"PrechargeModel/Pre-Charge Control Switch/Continuous/Switch" ) ,
+TARGET_STRING ( "" ) , 0 , 0 , 0 , 0 , 0 } , { 5 , 0 , TARGET_STRING (
 "PrechargeModel/Solver Configuration/EVAL_KEY/INPUT_1_1_1" ) , TARGET_STRING
-( "" ) , 0 , 0 , 1 , 0 , 1 } , { 3 , 0 , TARGET_STRING (
+( "" ) , 0 , 0 , 1 , 0 , 1 } , { 6 , 0 , TARGET_STRING (
 "PrechargeModel/Solver Configuration/EVAL_KEY/INPUT_2_1_1" ) , TARGET_STRING
-( "" ) , 0 , 0 , 1 , 0 , 1 } , { 4 , 0 , TARGET_STRING (
+( "" ) , 0 , 0 , 1 , 0 , 1 } , { 7 , 0 , TARGET_STRING (
 "PrechargeModel/Solver Configuration/EVAL_KEY/INPUT_3_1_1" ) , TARGET_STRING
-( "" ) , 0 , 0 , 1 , 0 , 1 } , { 5 , 0 , TARGET_STRING (
+( "" ) , 0 , 0 , 1 , 0 , 1 } , { 8 , 0 , TARGET_STRING (
 "PrechargeModel/Solver Configuration/EVAL_KEY/OUTPUT_1_0" ) , TARGET_STRING (
-"" ) , 0 , 0 , 2 , 0 , 1 } , { 6 , 0 , TARGET_STRING (
+"" ) , 0 , 0 , 2 , 0 , 1 } , { 9 , 0 , TARGET_STRING (
 "PrechargeModel/Solver Configuration/EVAL_KEY/STATE_1" ) , TARGET_STRING ( ""
-) , 0 , 0 , 3 , 0 , 1 } , { 7 , 0 , TARGET_STRING (
-"PrechargeModel/Stair Generator/Continuous/Math Function" ) , TARGET_STRING (
-"" ) , 0 , 0 , 0 , 0 , 1 } , { 8 , 0 , TARGET_STRING (
-"PrechargeModel/Stair Generator/Continuous/Selector" ) , TARGET_STRING ( "" )
-, 0 , 0 , 0 , 0 , 0 } , { 9 , 0 , TARGET_STRING (
-"PrechargeModel/Stair Generator/Continuous/Switch" ) , TARGET_STRING ( "" ) ,
-0 , 0 , 0 , 0 , 0 } , { 0 , 0 , ( NULL ) , ( NULL ) , 0 , 0 , 0 , 0 , 0 } } ;
-static const rtwCAPI_BlockParameters rtBlockParameters [ ] = { { 10 ,
-TARGET_STRING ( "PrechargeModel/Stair Generator" ) , TARGET_STRING (
-"TimeInput" ) , 0 , 4 , 0 } , { 11 , TARGET_STRING (
-"PrechargeModel/Stair Generator" ) , TARGET_STRING ( "RepeatPattern" ) , 0 ,
-0 , 0 } , { 12 , TARGET_STRING ( "PrechargeModel/HV+  Control Switch" ) ,
-TARGET_STRING ( "Time" ) , 0 , 0 , 0 } , { 13 , TARGET_STRING (
-"PrechargeModel/HV+  Control Switch" ) , TARGET_STRING ( "Before" ) , 0 , 0 ,
-0 } , { 14 , TARGET_STRING ( "PrechargeModel/HV+  Control Switch" ) ,
-TARGET_STRING ( "After" ) , 0 , 0 , 0 } , { 15 , TARGET_STRING (
-"PrechargeModel/HV- Control Switch" ) , TARGET_STRING ( "Time" ) , 0 , 0 , 0
-} , { 16 , TARGET_STRING ( "PrechargeModel/HV- Control Switch" ) ,
-TARGET_STRING ( "Before" ) , 0 , 0 , 0 } , { 17 , TARGET_STRING (
-"PrechargeModel/HV- Control Switch" ) , TARGET_STRING ( "After" ) , 0 , 0 , 0
-} , { 18 , TARGET_STRING (
-"PrechargeModel/Stair Generator/Continuous/Constant1" ) , TARGET_STRING (
-"Value" ) , 0 , 0 , 0 } , { 19 , TARGET_STRING (
-"PrechargeModel/Stair Generator/Continuous/Output" ) , TARGET_STRING (
-"Value" ) , 0 , 5 , 0 } , { 20 , TARGET_STRING (
-"PrechargeModel/Stair Generator/Continuous/Switch" ) , TARGET_STRING (
-"Threshold" ) , 0 , 0 , 0 } , { 21 , TARGET_STRING (
-"PrechargeModel/Stair Generator/Continuous/While Iterator Subsystem/Index" )
-, TARGET_STRING ( "InitialOutput" ) , 1 , 0 , 0 } , { 22 , TARGET_STRING (
- "PrechargeModel/Stair Generator/Continuous/While Iterator Subsystem/Detect Fall Nonpositive"
+) , 0 , 0 , 3 , 0 , 1 } , { 0 , 0 , ( NULL ) , ( NULL ) , 0 , 0 , 0 , 0 , 0 }
+} ; static const rtwCAPI_BlockParameters rtBlockParameters [ ] = { { 10 ,
+TARGET_STRING ( "PrechargeModel/Pre-Charge Control Switch" ) , TARGET_STRING
+( "TimeInput" ) , 0 , 4 , 0 } , { 11 , TARGET_STRING (
+"PrechargeModel/Pre-Charge Control Switch" ) , TARGET_STRING (
+"RepeatPattern" ) , 0 , 0 , 0 } , { 12 , TARGET_STRING (
+"PrechargeModel/HV+  Control Switch" ) , TARGET_STRING ( "Time" ) , 0 , 0 , 0
+} , { 13 , TARGET_STRING ( "PrechargeModel/HV+  Control Switch" ) ,
+TARGET_STRING ( "Before" ) , 0 , 0 , 0 } , { 14 , TARGET_STRING (
+"PrechargeModel/HV+  Control Switch" ) , TARGET_STRING ( "After" ) , 0 , 0 ,
+0 } , { 15 , TARGET_STRING ( "PrechargeModel/HV- Control Switch" ) ,
+TARGET_STRING ( "Time" ) , 0 , 0 , 0 } , { 16 , TARGET_STRING (
+"PrechargeModel/HV- Control Switch" ) , TARGET_STRING ( "Before" ) , 0 , 0 ,
+0 } , { 17 , TARGET_STRING ( "PrechargeModel/HV- Control Switch" ) ,
+TARGET_STRING ( "After" ) , 0 , 0 , 0 } , { 18 , TARGET_STRING (
+"PrechargeModel/Pre-Charge Control Switch/Continuous/Constant1" ) ,
+TARGET_STRING ( "Value" ) , 0 , 0 , 0 } , { 19 , TARGET_STRING (
+"PrechargeModel/Pre-Charge Control Switch/Continuous/Output" ) ,
+TARGET_STRING ( "Value" ) , 0 , 5 , 0 } , { 20 , TARGET_STRING (
+"PrechargeModel/Pre-Charge Control Switch/Continuous/Switch" ) ,
+TARGET_STRING ( "Threshold" ) , 0 , 0 , 0 } , { 21 , TARGET_STRING (
+ "PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/Index"
+) , TARGET_STRING ( "InitialOutput" ) , 1 , 0 , 0 } , { 22 , TARGET_STRING (
+ "PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/Detect Fall Nonpositive"
 ) , TARGET_STRING ( "vinit" ) , 2 , 0 , 0 } , { 23 , TARGET_STRING (
-"PrechargeModel/Stair Generator/Continuous/While Iterator Subsystem/Constant1"
+ "PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/Constant1"
 ) , TARGET_STRING ( "Value" ) , 1 , 0 , 0 } , { 24 , TARGET_STRING (
-"PrechargeModel/Stair Generator/Continuous/While Iterator Subsystem/Constant2"
+ "PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/Constant2"
 ) , TARGET_STRING ( "Value" ) , 1 , 0 , 0 } , { 25 , TARGET_STRING (
-"PrechargeModel/Stair Generator/Continuous/While Iterator Subsystem/Constant3"
+ "PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/Constant3"
 ) , TARGET_STRING ( "Value" ) , 1 , 0 , 0 } , { 26 , TARGET_STRING (
-"PrechargeModel/Stair Generator/Continuous/While Iterator Subsystem/Switch1"
+ "PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/Switch1"
 ) , TARGET_STRING ( "Threshold" ) , 0 , 0 , 0 } , { 27 , TARGET_STRING (
- "PrechargeModel/Stair Generator/Continuous/While Iterator Subsystem/Detect Fall Nonpositive/Nonpositive/Constant"
+ "PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/Detect Fall Nonpositive/Nonpositive/Constant"
 ) , TARGET_STRING ( "Value" ) , 3 , 0 , 0 } , { 0 , ( NULL ) , ( NULL ) , 0 ,
 0 , 0 } } ; static int_T rt_LoggedStateIdxList [ ] = { - 1 } ; static const
 rtwCAPI_Signals rtRootInputs [ ] = { { 0 , 0 , ( NULL ) , ( NULL ) , 0 , 0 ,
@@ -87,11 +87,12 @@ rtwCAPI_ModelParameters rtModelParameters [ ] = { { 0 , ( NULL ) , 0 , 0 , 0
 } } ;
 #ifndef HOST_CAPI_BUILD
 static void * rtDataAddrMap [ ] = { & rtB . pjlmc1lzp1 , & rtB . nrxejncqrw ,
-& rtB . p15kjgtpsv [ 0 ] , & rtB . asepqqecqj [ 0 ] , & rtB . ifpoliolwo [ 0
-] , & rtB . l5aisodevg [ 0 ] , & rtB . gd1k0xmto2 [ 0 ] , & rtB . bqza00cyqn
-, & rtB . h5s12bgqxk , & rtB . nxlv1serga , & rtP . StairGenerator_TimeInput
-[ 0 ] , & rtP . StairGenerator_RepeatPattern , & rtP . HVControlSwitch_Time ,
-& rtP . HVControlSwitch_Y0 , & rtP . HVControlSwitch_YFinal , & rtP .
+& rtB . bqza00cyqn , & rtB . h5s12bgqxk , & rtB . nxlv1serga , & rtB .
+p15kjgtpsv [ 0 ] , & rtB . asepqqecqj [ 0 ] , & rtB . ifpoliolwo [ 0 ] , &
+rtB . l5aisodevg [ 0 ] , & rtB . gd1k0xmto2 [ 0 ] , & rtP .
+PreChargeControlSwitch_TimeInput [ 0 ] , & rtP .
+PreChargeControlSwitch_RepeatPattern , & rtP . HVControlSwitch_Time , & rtP .
+HVControlSwitch_Y0 , & rtP . HVControlSwitch_YFinal , & rtP .
 HVControlSwitch_Time_d3xzd30hb0 , & rtP . HVControlSwitch_Y0_hwjg3kkkyh , &
 rtP . HVControlSwitch_YFinal_mmqozp25oj , & rtP . Constant1_Value , & rtP .
 Output_Value [ 0 ] , & rtP . Switch_Threshold , & rtP . Index_Y0 , & rtP .
@@ -125,7 +126,7 @@ int8_T ) 1 , ( uint8_T ) 0 } , { ( const void * ) & rtcapiStoredFloats [ 0 ]
 10 , rtRootInputs , 0 , rtRootOutputs , 0 } , { rtBlockParameters , 18 ,
 rtModelParameters , 0 } , { ( NULL ) , 0 } , { rtDataTypeMap , rtDimensionMap
 , rtFixPtMap , rtElementMap , rtSampleTimeMap , rtDimensionArray } , "float"
-, { 3405627555U , 861820321U , 3847794471U , 3409354729U } , ( NULL ) , 0 , (
+, { 2535319868U , 1506287797U , 151381096U , 2597371301U } , ( NULL ) , 0 , (
 boolean_T ) 0 , rt_LoggedStateIdxList } ; const
 rtwCAPI_ModelMappingStaticInfo * PrechargeModel_GetCAPIStaticMap ( void ) {
 return & mmiStatic ; }

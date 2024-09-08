@@ -48,16 +48,16 @@
 #endif
 #ifndef IN_RACCEL_MAIN
 #endif
-typedef struct { real_T pjlmc1lzp1 ; real_T nrxejncqrw ; real_T asepqqecqj [
-4 ] ; real_T ifpoliolwo [ 4 ] ; real_T nxlv1serga ; real_T bqza00cyqn ;
-real_T h5s12bgqxk ; real_T p15kjgtpsv [ 4 ] ; real_T gd1k0xmto2 [ 14 ] ;
+typedef struct { real_T pjlmc1lzp1 ; real_T asepqqecqj [ 4 ] ; real_T
+nrxejncqrw ; real_T ifpoliolwo [ 4 ] ; real_T nxlv1serga ; real_T bqza00cyqn
+; real_T h5s12bgqxk ; real_T p15kjgtpsv [ 4 ] ; real_T gd1k0xmto2 [ 14 ] ;
 real_T l5aisodevg [ 2 ] ; } B ; typedef struct { real_T aaswsr1rcu [ 2 ] ;
 real_T argz0f5dqi [ 2 ] ; real_T fnx34i5x5n [ 2 ] ; real_T gdnhhqi5jl [ 9 ] ;
 real_T pan5gcvylw [ 3 ] ; real_T k4lrp1mqqo ; real_T na4n4iguxp ; void *
 hbvvke1n10 ; void * gelipinn1a ; void * cxiazli5ii ; void * o2kfwlvfww ; void
 * ckagq2xb0w ; void * pfon4t4jjl ; void * elb0r4kd24 ; void * pr5kzcttse ;
 void * dw0srzoblx ; void * c5twv3sylm ; struct { void * LoggedData [ 2 ] ; }
-nq5hownsx1 ; int_T i0ge3te0zu [ 3 ] ; int_T otllr3ihnw ; int_T l0224yqaan ;
+luqt303qcg ; int_T i0ge3te0zu [ 3 ] ; int_T otllr3ihnw ; int_T l0224yqaan ;
 int_T oou11isfot ; boolean_T nfwbh1ti3i ; uint8_T lwu0ota2wt [ 3 ] ; uint8_T
 g0rbolrycs [ 3 ] ; uint8_T kkgrjivyjr ; uint8_T bg0p5tdgxq ; boolean_T
 dmyikon5da [ 4 ] ; boolean_T ekhogeqn0r ; boolean_T ccsx3v14fa ; } DW ;
@@ -70,8 +70,9 @@ px5q0ifs0m ; real_T gblnr0iypr [ 4 ] ; real_T oo4l2j13md ; real_T nyjb1zn1oe
 ; real_T pmzyjoruoa ; } ZCV ; typedef struct { ZCSigState jdg42luxap ;
 ZCSigState iiggpa4ztk ; ZCSigState jggsb5cnar ; } PrevZCX ; typedef struct {
 rtwCAPI_ModelMappingInfo mmi ; } DataMapInfo ; struct P_ { real_T
-StairGenerator_RepeatPattern ; real_T StairGenerator_TimeInput [ 4 ] ;
-boolean_T DetectFallNonpositive_vinit ; real_T Switch1_Threshold ; real_T
+PreChargeControlSwitch_RepeatPattern ; real_T
+PreChargeControlSwitch_TimeInput [ 4 ] ; boolean_T
+DetectFallNonpositive_vinit ; real_T Switch1_Threshold ; real_T
 HVControlSwitch_Time ; real_T HVControlSwitch_Y0 ; real_T
 HVControlSwitch_YFinal ; real_T HVControlSwitch_Time_d3xzd30hb0 ; real_T
 HVControlSwitch_Y0_hwjg3kkkyh ; real_T HVControlSwitch_YFinal_mmqozp25oj ;
