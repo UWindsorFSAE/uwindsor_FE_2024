@@ -1,3 +1,4 @@
 hello
 Make sure to change the directory at which you want the databse to be made before running the program (make sure it still has "\\LoggedData.db" at the end of the directory you want to save it at
 It also needs every \\ in your path, not \
+Temporarily taken down
