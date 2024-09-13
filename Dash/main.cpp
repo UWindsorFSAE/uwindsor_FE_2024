@@ -10,6 +10,7 @@ class MainWindow : public QWidget
 public:
     MainWindow()
     {
+        //test
         resize(1280, 720);
         setStyleSheet("background-color: black;");
         // Create the main layout for the widget
