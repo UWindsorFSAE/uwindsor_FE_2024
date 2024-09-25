@@ -1,0 +1,6 @@
+chcp 65001
+<<<<<<< HEAD
+cmd /D /c start "RapidAccelerator" /B "C:\Users\HP\OneDrive - University of Windsor\Desktop\FSAE\uwindsor_FE_2024\Accumulator\slprj\raccel\PrechargeModel\PrechargeModel.exe" --config "C:\Users\HP\AppData\Local\Temp\raccel_inputp8b8e9243_fd22_468e_8e24_9938294b9254.cfg" -server_info_file "C:\Users\HP\AppData\Local\Temp\tpp8b8e9243_fd22_468e_8e24_9938294b9254.info" -tgtconn_server_info_file "C:\Users\HP\AppData\Local\Temp\tgtconnp8b8e9243_fd22_468e_8e24_9938294b9254.info" -tgtconn_port 0 -port 0 -verbose off -w 1>"C:\Users\HP\OneDrive - University of Windsor\Desktop\FSAE\uwindsor_FE_2024\Accumulator\slprj\raccel\PrechargeModel\cmdLog.txt"
+=======
+cmd /D /c start "RapidAccelerator" /B "C:\Users\bansa\Documents\FSAE\uwindsor_FE_2024\Accumulator\slprj\raccel\PrechargeModel\PrechargeModel.exe" --config "C:\Users\bansa\AppData\Local\Temp\raccel_inputp2cad72c8_e541_44cc_80bc_1a9ace440c28.cfg" -server_info_file "C:\Users\bansa\AppData\Local\Temp\tpp2cad72c8_e541_44cc_80bc_1a9ace440c28.info" -tgtconn_server_info_file "C:\Users\bansa\AppData\Local\Temp\tgtconnp2cad72c8_e541_44cc_80bc_1a9ace440c28.info" -tgtconn_port 0 -port 0 -verbose off -w 1>"C:\Users\bansa\Documents\FSAE\uwindsor_FE_2024\Accumulator\slprj\raccel\PrechargeModel\cmdLog.txt"
+>>>>>>> 81c8384189821102f0fc1ec7f00fd4773b07ae88

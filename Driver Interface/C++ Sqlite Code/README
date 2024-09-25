@@ -1,0 +1,34 @@
+hello
+C++ code for datalogging with codes
+
+|---------------------|--------------------------|---------------|
+|                     |     EVENTTYPE Legend     |               |
+|---------------------|--------------------------|---------------|
+| Original Term       | 5-Character Abbreviation | Variable Type |
+|---------------------|--------------------------|---------------|
+| Speed               | SPEED                    | INTEGER       |
+| MotorTemp           | MOTMP                    | REAL          |
+| CoolantTemp1        | CLT1T                    | REAL          |
+| CoolantTemp2        | CLT2T                    | REAL          |
+| CoolantTemp3        | CLT3T                    | REAL          |
+| CoolantFlowRate     | CLFLR                    | REAL          |
+| MotorCurrent        | MOTCR                    | REAL          |
+| HVBatteryVoltage    | HVVLT                    | REAL          |
+| HVBatteryTemprature | HVTMP                    | REAL          |
+| LVBatteryTemprature | LVTMP                    | REAL          |
+| Longitude           | LONG_                    | REAL          |
+| Latitude            | LAT__                    | REAL          |
+| Yaw                 | YAW__                    | REAL          |
+| Pitch               | PITCH                    | REAL          |
+| Roll                | ROLL_                    | REAL          |
+| AccelerationX       | ACC_X                    | REAL          |
+| AccelerationY       | ACC_Y                    | REAL          |
+| AccelerationZ       | ACC_Z                    | REAL          |
+| MagentoX            | MGN_X                    | REAL          |
+| MagentoY            | MGN_Y                    | REAL          |
+| MagentoZ            | MGN_Z                    | REAL          |
+| MaxAcceleration     | MAX_A                    | REAL          |
+| TopSpeed            | TOPSP                    | INTEGER       |
+| LapTime             | LAP_T                    | REAL          |
+| DriverMode          | DRI_M                    | BOOLEAN       |
+|---------------------|--------------------------|---------------|

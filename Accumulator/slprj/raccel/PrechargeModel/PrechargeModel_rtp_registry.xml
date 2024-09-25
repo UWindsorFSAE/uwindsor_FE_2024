@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm_rtp_registry/R2023a">
+  <slsa.mm.rtpregistry.ModelMetadata type="slsa.mm.rtpregistry.ModelMetadata" uuid="9189e48b-7178-4fed-af53-0d4e351b681f">
+    <modelName>PrechargeModel</modelName>
+  </slsa.mm.rtpregistry.ModelMetadata>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="70eddd79-b90d-438b-963c-bea4bd38942b">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="0b250d1b-3a3b-453e-883a-62ac83a29556"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="1bb92675-8f6b-49ad-ab6a-9f2088c08f73"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="1bb92675-8f6b-49ad-ab6a-9f2088c08f73">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="70eddd79-b90d-438b-963c-bea4bd38942b"/>
+    <segmentIndex>2</segmentIndex>
+    <valueIndices>0</valueIndices>
+    <valueIndices>0</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="0b250d1b-3a3b-453e-883a-62ac83a29556">
+    <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/Switch1</blockPath>
+    <name>Threshold</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="70eddd79-b90d-438b-963c-bea4bd38942b"/>
+  </slsa.mm.rtpregistry.BlockParameterId>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="4f732c25-4c89-471b-8499-a654cac922e3">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="555ef9c1-6526-47a2-b493-f1c3a2bb2ef9"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="6ed61884-69f5-4d47-9e31-84f55b222870"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="ed9a000c-6fe1-4be7-9d1c-a23b2951e894">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="545f26e2-aa78-4db0-9ea8-f985f5a06c97"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="36694127-3f25-484b-999c-289c6e683b1d"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="555ef9c1-6526-47a2-b493-f1c3a2bb2ef9">
+    <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/Output</blockPath>
+    <name>Value</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="4f732c25-4c89-471b-8499-a654cac922e3"/>
+  </slsa.mm.rtpregistry.BlockParameterId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="6ed61884-69f5-4d47-9e31-84f55b222870">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="4f732c25-4c89-471b-8499-a654cac922e3"/>
+    <segmentIndex>2</segmentIndex>
+    <valueIndices>7</valueIndices>
+    <valueIndices>11</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="545f26e2-aa78-4db0-9ea8-f985f5a06c97">
+    <blockPath>PrechargeModel/Pre-Charge Control Switch/Continuous/While Iterator Subsystem/Constant1</blockPath>
+    <name>Value</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="ed9a000c-6fe1-4be7-9d1c-a23b2951e894"/>
+  </slsa.mm.rtpregistry.BlockParameterId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="36694127-3f25-484b-999c-289c6e683b1d">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="ed9a000c-6fe1-4be7-9d1c-a23b2951e894"/>
+    <segmentIndex>3</segmentIndex>
+    <valueIndices>1</valueIndices>
+    <valueIndices>1</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+</MF0>
