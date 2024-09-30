@@ -1,5 +1,5 @@
 hello
-C++ code for datalogging with codes
+C++ code for datalogging with code - needs to be able to work with command like arguments so that it can take calls from other seperate programs (like the ones that convert CAN or SPI signals)
 
 if beind run on windows needs sqlite3 to be correctly installed, (try typing sqlite3 in terminal. if it dosent recognizze it the app wont run) 
 Should be configured for RPi cuz it runs with bare g++ terminal command {"g++ Sqlite_CRUD_Tutorial.cpp -o sqlite_demo -lsqlite3"}
