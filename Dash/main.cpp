@@ -1,63 +1,104 @@
 #include <QApplication>
-#include <QPushButton>
-#include <QWidget>
-#include <QLabel>
+#include <QDebug>
+#include <QFontDatabase>
 #include <QGridLayout>
+#include <QLabel>
 #include <QVBoxLayout>
+#include <QWidget>
+#include <vector>
 
-class MainWindow : public QWidget
-{
-public:
-    MainWindow()
-    {
-        resize(1280, 720);
-        setStyleSheet("background-color: black;");
-        // Create the main layout for the widget
-        QVBoxLayout *mainLayout = new QVBoxLayout(this);
-
-        // Create a header layout for the text and button
-        QHBoxLayout *headerLayout = new QHBoxLayout();
-
-        // Create a label and a button for the header
-        QLabel *headerLabel = new QLabel("Header Text");
-        QPushButton *headerButton = new QPushButton("Header Button");
-        headerButton->setStyleSheet("background-color: white; color: black;");
-
-        // Add the label and button to the header layout
-        headerLayout->addWidget(headerLabel);
-        headerLayout->addWidget(headerButton);
-
-        // Create the grid layout for the buttons
-        QGridLayout *gridLayout = new QGridLayout();
-
-        // Number of rows and columns for the grid
-        int numRows = 5; // For example, 5 rows
-        int numCols = 4; // 4 columns
-
-        // Add buttons to the grid layout
-        for (int i = 0; i < numRows * numCols; ++i)
-        {
-            QPushButton *button = new QPushButton(QString("Button %1").arg(i + 1));
-
-            // Set the button background color to white
-            button->setStyleSheet("background-color: white; color: black;");
-
-            gridLayout->addWidget(button, i / numCols, i % numCols);
-        }
-
-        // Add the header layout and grid layout to the main layout
-        mainLayout->addLayout(headerLayout);
-        mainLayout->addLayout(gridLayout);
-
-        // Set the main layout to the widget
-        setLayout(mainLayout);
-    }
-};
-
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
-    MainWindow window;
+
+    // Load the custom font from the resources
+    int fontId = QFontDatabase::addApplicationFont(":/fonts/resources/Roboto-Medium.ttf");
+    if (fontId == -1) {
+        qDebug() << "Font loading failed!";
+    } else {
+        qDebug() << "Font loaded successfully!";
+    }
+
+    // Load the custom font from the resources
+    int font2Id = QFontDatabase::addApplicationFont(":/fonts/resources/Roboto-Light.ttf");
+    if (font2Id == -1) {
+        qDebug() << "Font loading failed!";
+    } else {
+        qDebug() << "Font loaded successfully!";
+    }
+
+    // Create the main window widget
+    QWidget window;
+    window.setWindowTitle("Dash");
+    window.setStyleSheet("background-color: #080808;");
+
+    QFontDatabase fontDatabase;
+    QStringList fontFamilies = fontDatabase.families();  // List of font families
+
+    // Print the font families
+    for (const QString &font : fontFamilies) {
+        qDebug() << font;
+    }
+
+    // Create the grid layout and set it as the layout for the window
+    QGridLayout *gridLayout = new QGridLayout(&window);
+
+    int rows = 2;
+    int cols = 3;
+
+    std::vector<Qt::Alignment> allignments = {Qt::AlignLeft, Qt::AlignHCenter, Qt::AlignRight};
+
+    // Populate the grid with components, each containing two labels
+    for (int row = 0; row < rows; ++row) {
+        for (int col = 0; col < cols; ++col) {
+            // Create a widget to hold the two labels
+            QWidget *componentWidget = new QWidget();
+            QVBoxLayout *vboxLayout = new QVBoxLayout(componentWidget);
+
+            // Set small spacing between labels
+            vboxLayout->setSpacing(0);
+
+            // Create two labels and add them to the vertical layout
+            QLabel *label1 = new QLabel(QString("SPEED"));
+            QLabel *label2 = new QLabel(QString("331.2"));
+
+            // Create two different fonts for the labels
+            QFont font1("Roboto Medium");
+            QFont font2("Roboto Medium");
+
+            // Apply the fonts to the labels
+            label1->setFont(font1);
+            label2->setFont(font2);
+
+            // Set alignment to top-left to reduce extra spacing
+            label1->setAlignment(allignments[col]);
+            label2->setAlignment(allignments[col]);
+
+            // Set alignment to top-left to reduce extra spacing
+            vboxLayout->setAlignment(Qt::AlignCenter);
+            vboxLayout->setSpacing(0);
+
+            // Set larger font size via stylesheet
+            label1->setStyleSheet("QLabel { font-size: 30px; font-weight: 100; color: #13b80d; margin: 0; padding: 0; }");
+            label2->setStyleSheet("QLabel { font-size: 60px; font-weight: 800; color: white; margin: 0; padding: 0; }");
+
+            // Add labels to the vertical layout
+            vboxLayout->addWidget(label1);
+            vboxLayout->addWidget(label2);
+
+            // Set layout margins to 0 for a compact look
+            vboxLayout->setContentsMargins(0, 0, 0, 0);
+
+            // Add the widget containing the two labels to the grid layout
+            gridLayout->addWidget(componentWidget, row, col);
+        }
+    }
+
+    // Enable the grid layout to expand and fill the entire window
+    window.setLayout(gridLayout);
+    window.setGeometry(100, 100, 800, 480);  // Initial window size
+
+    // Show the window
     window.show();
+
     return app.exec();
 }
