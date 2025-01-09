@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HarnessInformation>
+  <Harness>
+    <P Name="Name">BMS_Software_Harness1</P>
+    <P Name="Description"/>
+    <P Name="CreatedBy">mluethy</P>
+    <P Name="CreatedOn">Mon May 07 02:49:10 2018</P>
+    <P Name="ModifiedBy">cpatel</P>
+    <P Name="LastSaved">Tue Dec 06 13:47:12 2022</P>
+    <P Name="Owner">bd</P>
+    <P Name="OwnerType">BD_HARNESS</P>
+    <P Name="OwnerPath">.</P>
+    <P Name="Directory"/>
+    <P Name="FileName">BMS_Software_Harness1.slx</P>
+    <P Name="SavedVersion">10.6</P>
+    <P Name="HarnessUUID">29dc33da-389d-47a1-98f5-316930247b72</P>
+    <P Name="HarnessConnectionsMap">||2079912592,32764,2079912632,32764||</P>
+    <P Name="VerificationMode">0</P>
+    <P Name="HarnessOwnerCheckSum">0,0,0,0</P>
+    <P Name="RebuildOnOpen">false</P>
+    <P Name="RebuildModelData">false</P>
+    <P Name="Graphical">false</P>
+    <P Name="DriveFcnCallWithTS">true</P>
+    <P Name="ScheduleInitTermReset">false</P>
+    <P Name="AutoShapeInputs">false</P>
+    <P Name="SLDVCompatible">no</P>
+    <P Name="SynchronizationMode">2</P>
+    <P Name="IsImported">true</P>
+    <P Name="PostRebuildCB"/>
+    <P Name="IsCodeContext">false</P>
+    <P Name="SchedulerBlock">0</P>
+    <P Name="SourceTypeString">Test Sequence</P>
+    <P Name="SinkTypeString">Test Assessment</P>
+    <P Name="CustomSourcePath"/>
+    <P Name="CustomSinkPath"/>
+    <P Name="BlockSIDs">0|0|0|0|0|0|0</P>
+    <P Name="OpenGraphs"/>
+    <P Name="ExistingBuildFolder"/>
+    <P Name="FunctionInterfaceName"/>
+  </Harness>
+  <ModelMetadata>
+    <P Name="ModelUUID">67b1d956-7897-45fa-a578-3ebcc80c3ccd</P>
+    <P Name="OwnerBDName">BMS_Software</P>
+  </ModelMetadata>
+</HarnessInformation>

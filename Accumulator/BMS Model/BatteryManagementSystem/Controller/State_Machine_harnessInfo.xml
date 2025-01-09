@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HarnessInformation>
+  <Harness>
+    <P Name="Name">State_Machine_Harness1</P>
+    <P Name="Description"/>
+    <P Name="CreatedBy">cpatel</P>
+    <P Name="CreatedOn">Mon Dec 28 13:36:57 2020</P>
+    <P Name="ModifiedBy">cpatel</P>
+    <P Name="LastSaved">Wed Oct 12 11:21:45 2022</P>
+    <P Name="Owner">bd</P>
+    <P Name="OwnerType">BD_HARNESS</P>
+    <P Name="OwnerPath">.</P>
+    <P Name="Directory"/>
+    <P Name="FileName">State_Machine_Harness1.slx</P>
+    <P Name="SavedVersion">10.6</P>
+    <P Name="HarnessUUID">8b984452-bce3-45c7-844d-2b6d5c4e7434</P>
+    <P Name="HarnessConnectionsMap">0,1,2,3|0,1,2,3|0,0,0,0||</P>
+    <P Name="VerificationMode">0</P>
+    <P Name="HarnessOwnerCheckSum">0,0,0,0</P>
+    <P Name="RebuildOnOpen">false</P>
+    <P Name="RebuildModelData">false</P>
+    <P Name="Graphical">false</P>
+    <P Name="DriveFcnCallWithTS">true</P>
+    <P Name="ScheduleInitTermReset">false</P>
+    <P Name="AutoShapeInputs">false</P>
+    <P Name="SLDVCompatible">no</P>
+    <P Name="SynchronizationMode">1</P>
+    <P Name="IsImported">false</P>
+    <P Name="PostRebuildCB"/>
+    <P Name="IsCodeContext">false</P>
+    <P Name="SchedulerBlock">0</P>
+    <P Name="SourceTypeString">Signal Editor</P>
+    <P Name="SinkTypeString">Outport</P>
+    <P Name="CustomSourcePath"/>
+    <P Name="CustomSinkPath"/>
+    <P Name="BlockSIDs">2|20|0|0|0|0|0</P>
+    <P Name="OpenGraphs">||||State_Machine_Harness1</P>
+    <P Name="ExistingBuildFolder"/>
+    <P Name="FunctionInterfaceName"/>
+  </Harness>
+  <Harness>
+    <P Name="Name">State_Machine_Harness2</P>
+    <P Name="Description"/>
+    <P Name="CreatedBy">cpatel</P>
+    <P Name="CreatedOn">Mon Jun 06 13:13:59 2022</P>
+    <P Name="ModifiedBy">cpatel</P>
+    <P Name="LastSaved">Wed Oct 12 12:16:26 2022</P>
+    <P Name="Owner">bd</P>
+    <P Name="OwnerType">BD_HARNESS</P>
+    <P Name="OwnerPath">.</P>
+    <P Name="Directory"/>
+    <P Name="FileName">State_Machine_Harness2.slx</P>
+    <P Name="SavedVersion">10.6</P>
+    <P Name="HarnessUUID">584817d8-c7a2-4bc0-b62a-3dacb98d1df1</P>
+    <P Name="HarnessConnectionsMap">0,1,2,3|0|0,0,0,0||</P>
+    <P Name="VerificationMode">0</P>
+    <P Name="HarnessOwnerCheckSum">0,0,0,0</P>
+    <P Name="RebuildOnOpen">false</P>
+    <P Name="RebuildModelData">false</P>
+    <P Name="Graphical">false</P>
+    <P Name="DriveFcnCallWithTS">true</P>
+    <P Name="ScheduleInitTermReset">false</P>
+    <P Name="AutoShapeInputs">false</P>
+    <P Name="SLDVCompatible">no</P>
+    <P Name="SynchronizationMode">1</P>
+    <P Name="IsImported">false</P>
+    <P Name="PostRebuildCB"/>
+    <P Name="IsCodeContext">false</P>
+    <P Name="SchedulerBlock">0</P>
+    <P Name="SourceTypeString">Test Sequence</P>
+    <P Name="SinkTypeString">Test Assessment</P>
+    <P Name="CustomSourcePath"/>
+    <P Name="CustomSinkPath"/>
+    <P Name="BlockSIDs">2|22|0|0|0|0|0</P>
+    <P Name="OpenGraphs"/>
+    <P Name="ExistingBuildFolder"/>
+    <P Name="FunctionInterfaceName"/>
+  </Harness>
+  <ModelMetadata>
+    <P Name="ModelUUID">b20dd370-bfa9-4c5c-a58d-468731525a3b</P>
+    <P Name="OwnerBDName">State_Machine</P>
+  </ModelMetadata>
+</HarnessInformation>

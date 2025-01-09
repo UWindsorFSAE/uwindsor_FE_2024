@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HarnessInformation>
+  <Harness>
+    <P Name="Name">ContactorMgmt_Harness1</P>
+    <P Name="Description"/>
+    <P Name="CreatedBy">cpatel</P>
+    <P Name="CreatedOn">Fri Mar 05 17:16:45 2021</P>
+    <P Name="ModifiedBy">cpatel</P>
+    <P Name="LastSaved">Wed Oct 12 11:20:27 2022</P>
+    <P Name="Owner">bd</P>
+    <P Name="OwnerType">BD_HARNESS</P>
+    <P Name="OwnerPath">.</P>
+    <P Name="Directory"/>
+    <P Name="FileName">ContactorMgmt_Harness1.slx</P>
+    <P Name="SavedVersion">10.6</P>
+    <P Name="HarnessUUID">6730d91f-4a30-43ed-974d-9618ef7ba43a</P>
+    <P Name="HarnessConnectionsMap">0,1,2|0,1,2|0,0,0,0||</P>
+    <P Name="VerificationMode">0</P>
+    <P Name="HarnessOwnerCheckSum">0,0,0,0</P>
+    <P Name="RebuildOnOpen">false</P>
+    <P Name="RebuildModelData">false</P>
+    <P Name="Graphical">false</P>
+    <P Name="DriveFcnCallWithTS">true</P>
+    <P Name="ScheduleInitTermReset">false</P>
+    <P Name="AutoShapeInputs">false</P>
+    <P Name="SLDVCompatible">no</P>
+    <P Name="SynchronizationMode">1</P>
+    <P Name="IsImported">false</P>
+    <P Name="PostRebuildCB"/>
+    <P Name="IsCodeContext">false</P>
+    <P Name="SchedulerBlock">0</P>
+    <P Name="SourceTypeString">Signal Editor</P>
+    <P Name="SinkTypeString">Outport</P>
+    <P Name="CustomSourcePath"/>
+    <P Name="CustomSinkPath"/>
+    <P Name="BlockSIDs">2|15|0|0|0|0|0</P>
+    <P Name="OpenGraphs"/>
+    <P Name="ExistingBuildFolder"/>
+    <P Name="FunctionInterfaceName"/>
+  </Harness>
+  <ModelMetadata>
+    <P Name="ModelUUID">52ae9eaf-55ae-48dd-8b58-3c394e719a5f</P>
+    <P Name="OwnerBDName">ContactorMgmt</P>
+  </ModelMetadata>
+</HarnessInformation>

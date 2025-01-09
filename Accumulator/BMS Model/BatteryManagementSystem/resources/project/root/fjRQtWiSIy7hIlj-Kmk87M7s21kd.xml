@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Info Location="FileClassCategory">
+    <Info DataType="None" Name="Classification" ReadOnly="1" SingleValued="1"/>
+    <Label Location="0ca5b4bd-a0f8-4917-8d97-1f38ecdc8ba6">
+        <Info Name="Test_Results" ReadOnly="WRITABLE"/>
+    </Label>
+    <Label Location="1bd675ca-f725-4b8f-8ac4-1d4fe05b55f0">
+        <Info Name="Requirements" ReadOnly="WRITABLE"/>
+    </Label>
+    <Label Location="2a20a8e6-ba0c-4bb5-8c1a-2eca141eabe9">
+        <Info Name="Configuration" ReadOnly="WRITABLE"/>
+    </Label>
+    <Label Location="2ea79429-c24c-4e05-824e-95e502fb1807">
+        <Info Name="Documentation" ReadOnly="WRITABLE"/>
+    </Label>
+    <Label Location="44d7dccd-c95b-4c2c-b1fd-0446713646d8">
+        <Info Name="Setup" ReadOnly="WRITABLE"/>
+    </Label>
+    <Label Location="68227387-911e-41bf-b784-9c1e6dc9cf17">
+        <Info Name="Design Data" ReadOnly="WRITABLE"/>
+    </Label>
+    <Label Location="6e80a52f-d7af-4f92-94a9-c73f7b04d12c">
+        <Info Name="Links" ReadOnly="WRITABLE"/>
+    </Label>
+    <Label Location="7c78bf80-cf7c-4829-a266-cb2b7b056e82">
+        <Info Name="Scope View" ReadOnly="WRITABLE"/>
+    </Label>
+    <Label Location="8e9bf561-dc13-4bba-b3a1-040804f24804">
+        <Info Name="Architecture" ReadOnly="WRITABLE"/>
+    </Label>
+    <Label Location="97dacddb-4a21-4b01-b31a-92abecce1a09">
+        <Info Name="Test Design" ReadOnly="WRITABLE"/>
+    </Label>
+    <Label Location="a99d3f35-6b04-41a6-8373-c5975bfe3400">
+        <Info Name="Internal" ReadOnly="WRITABLE"/>
+    </Label>
+    <Label Location="artifact">
+        <Info Name="Artifact" ReadOnly="READ_ONLY"/>
+    </Label>
+    <Label Location="c2000787-9174-46f0-9054-54981c05ee7e">
+        <Info Name="Observer" ReadOnly="WRITABLE"/>
+    </Label>
+    <Label Location="convenience">
+        <Info Name="Convenience" ReadOnly="READ_ONLY"/>
+    </Label>
+    <Label Location="derived">
+        <Info Name="Derived" ReadOnly="READ_ONLY"/>
+    </Label>
+    <Label Location="design">
+        <Info Name="Design" ReadOnly="READ_ONLY"/>
+    </Label>
+    <Label Location="none">
+        <Info Name="None" ReadOnly="READ_ONLY"/>
+    </Label>
+    <Label Location="other">
+        <Info Name="Other" ReadOnly="READ_ONLY"/>
+    </Label>
+    <Label Location="test">
+        <Info Name="Test" ReadOnly="READ_ONLY"/>
+    </Label>
+</Info>
