@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configurations XML_version="1.2" id="configurations_0">
+                    
+    
+    
+    
+    <configuration XML_version="1.2" id="configuration_0">
+                                        
+        
+        
+        
+        <instance XML_version="1.2" desc="Texas Instruments XDS110 USB Debug Probe" href="connections/TIXDS110_Connection.xml" id="Texas Instruments XDS110 USB Debug Probe" xml="TIXDS110_Connection.xml" xmlpath="connections"/>
+                                        
+        
+        
+        
+        <connection XML_version="1.2" id="Texas Instruments XDS110 USB Debug Probe">
+                                                            
+            
+            
+            
+            <instance XML_version="1.2" href="drivers/tixds510debugssm.xml" id="drivers" xml="tixds510debugssm.xml" xmlpath="drivers"/>
+                                                            
+            
+            
+            
+            <instance XML_version="1.2" href="drivers/tixds510cs_dap.xml" id="drivers" xml="tixds510cs_dap.xml" xmlpath="drivers"/>
+                                                            
+            
+            
+            
+            <instance XML_version="1.2" href="drivers/tixds510cortexR.xml" id="drivers" xml="tixds510cortexR.xml" xmlpath="drivers"/>
+                                                            
+            
+            
+            
+            <instance XML_version="1.2" href="drivers/tixds510cortexM.xml" id="drivers" xml="tixds510cortexM.xml" xmlpath="drivers"/>
+                                                            
+            
+            
+            
+            <instance XML_version="1.2" href="drivers/tixds510pru.xml" id="drivers" xml="tixds510pru.xml" xmlpath="drivers"/>
+                                                            
+            
+            
+            
+            <instance XML_version="1.2" href="drivers/tixds510csstm.xml" id="drivers" xml="tixds510csstm.xml" xmlpath="drivers"/>
+                                                            
+            
+            
+            
+            <instance XML_version="1.2" href="drivers/tixds510etbcs.xml" id="drivers" xml="tixds510etbcs.xml" xmlpath="drivers"/>
+                                                            
+            
+            
+            
+            <platform XML_version="1.2" id="platform_0">
+                                                                                
+                
+                
+                
+                <instance XML_version="1.2" desc="AM263x" href="devices/AM263x.xml" id="AM263x" xml="AM263x.xml" xmlpath="devices"/>
+                                                                                
+                
+                
+                
+                <device HW_revision="1" XML_version="1.2" description="AM263x" id="AM263x" partnum="AM263x" simulation="no">
+                                                                                                    
+                    
+                    
+                    
+                    <router HW_revision="1.0" XML_version="1.2" description="OneMCU DebugSS top level" id="DEBUGSSM_0" isa="DEBUGSSM">
+                                                                                                                        
+                        
+                        
+                        
+                        <subpath id="subpath_0">
+                                                                                                                                            
+                            
+                            
+                            
+                            <router HW_revision="1.0" XML_version="1.2" description="CS_DAP Router" id="CS_DAP_0" isa="CS_DAP">
+                                                                                                                                                                
+                                
+                                
+                                
+                                <subpath id="subpath_2">
+                                                                                                                                                                                    
+                                    
+                                    
+                                    
+                                    <property Type="choicelist" Value="0" desc="Type_0" id="Type"/>
+                                                                                                                                                                                
+                                
+                                
+                                
+                                </subpath>
+                                                                                                                                                                
+                                
+                                
+                                
+                                <subpath id="subpath_3">
+                                                                                                                                                                                    
+                                    
+                                    
+                                    
+                                    <property Type="choicelist" Value="0" desc="Type_1" id="Type"/>
+                                                                                                                                                                                    
+                                    
+                                    
+                                    
+                                    <property Type="numericfield" Value="0x4" desc="Port Number_0" id="Port Number"/>
+                                                                                                                                                                                
+                                
+                                
+                                
+                                </subpath>
+                                                                                                                                                                
+                                
+                                
+                                
+                                <subpath id="subpath_4">
+                                                                                                                                                                                    
+                                    
+                                    
+                                    
+                                    <property Type="numericfield" Value="0x5" desc="Port Number_1" id="Port Number"/>
+                                                                                                                                                                                
+                                
+                                
+                                
+                                </subpath>
+                                                                                                                                                                
+                                
+                                
+                                
+                                <subpath id="subpath_5">
+                                                                                                                                                                                    
+                                    
+                                    
+                                    
+                                    <property Type="choicelist" Value="0" desc="Type_2" id="Type"/>
+                                                                                                                                                                                    
+                                    
+                                    
+                                    
+                                    <property Type="numericfield" Value="0x2" desc="Port Number_2" id="Port Number"/>
+                                                                                                                                                                                
+                                
+                                
+                                
+                                </subpath>
+                                                                                                                                                                
+                                
+                                
+                                
+                                <subpath id="subpath_6">
+                                                                                                                                                                                    
+                                    
+                                    
+                                    
+                                    <property Type="numericfield" Value="0x8" desc="Port Number_3" id="Port Number"/>
+                                                                                                                                                                                
+                                
+                                
+                                
+                                </subpath>
+                                                                                                                                                                
+                                
+                                
+                                
+                                <subpath id="subpath_7">
+                                                                                                                                                                                    
+                                    
+                                    
+                                    
+                                    <property Type="choicelist" Value="1" desc="Type_3" id="Type"/>
+                                                                                                                                                                                    
+                                    
+                                    
+                                    
+                                    <property Type="numericfield" Value="0x9" desc="Port Number_4" id="Port Number"/>
+                                                                                                                                                                                
+                                
+                                
+                                
+                                </subpath>
+                                                                                                                                                            
+                            
+                            
+                            
+                            </router>
+                                                                                                                                            
+                            
+                            
+                            
+                            <property Type="numericfield" Value="0x1" desc="Port Number_5" id="Port Number"/>
+                                                                                                                                        
+                        
+                        
+                        
+                        </subpath>
+                                                                                                                    
+                    
+                    
+                    
+                    </router>
+                                                                                                
+                
+                
+                
+                </device>
+                                                                            
+            
+            
+            
+            </platform>
+                                                        
+        
+        
+        
+        </connection>
+                                    
+    
+    
+    
+    </configuration>
+                
+
+
+
+</configurations>

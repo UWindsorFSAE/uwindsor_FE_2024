@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "F28379D",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "F28379D",
+                "resourceId": "/F28379D"
+            },
+            "launchSettings": {
+                "coresToLoadForProjectLaunch": [
+                    "C28xx_CPU1"
+                ]
+            }
+        }
+    ]
+}

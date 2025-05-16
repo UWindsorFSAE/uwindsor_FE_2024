@@ -1,0 +1,36 @@
+[C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc_tmp] Parsing file ...
+Found section 0 with adddress 0x00000000, size 0x00000040 bytes
+Found section 1 with adddress 0x70040000, size 0x0000dd30 bytes
+Found section 2 with adddress 0x7004dd30, size 0x000012d0 bytes
+Found section 3 with adddress 0x7005d4c0, size 0x00000a80 bytes
+Found section 4 with adddress 0x7005df40, size 0x000004a0 bytes
+Found section 5 with adddress 0x7005e3e0, size 0x000002c0 bytes
+Found section 6 with adddress 0x7005e6a0, size 0x00000140 bytes
+Found section 7 with adddress 0x7005e7e0, size 0x00000008 bytes
+Found section 8 with adddress 0x7005e7e8, size 0x00000658 bytes
+[C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc_tmp] Found 9 sections. 9 are non-XIP sections, 0 are XIP sections, NON-XIP entryPoint = 0x00000000
+Merging section @ 0x7004dd30 of size 0x000012d0, with section @ 0x70040000 of size 0x0000dd30
+Merging section @ 0x7005df40 of size 0x000004a0, with section @ 0x7005d4c0 of size 0x00000a80
+Merging section @ 0x7005e3e0 of size 0x000002c0, with section @ 0x7005d4c0 of size 0x00000f20
+Merging section @ 0x7005e6a0 of size 0x00000140, with section @ 0x7005d4c0 of size 0x000011e0
+Merging section @ 0x7005e7e0 of size 0x00000008, with section @ 0x7005d4c0 of size 0x00001320
+Merging section @ 0x7005e7e8 of size 0x00000658, with section @ 0x7005d4c0 of size 0x00001328
+Writing section header  #0, adddress 0x00000000, size 0x00000040 bytes to file [C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc]
+Writing section data with adddress 0x00000000, size 0x00000040 bytes to file [C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc]
+Writing section header  #1, adddress 0x70040000, size 0x0000f000 bytes to file [C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc]
+Writing section data with adddress 0x70040000, size 0x0000dd30 bytes to file [C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc]
+Writing section data with adddress 0x7004dd30, size 0x000012d0 bytes to file [C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc]
+Writing section header  #2, adddress 0x7005d4c0, size 0x00001980 bytes to file [C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc]
+Writing section data with adddress 0x7005d4c0, size 0x00000a80 bytes to file [C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc]
+Writing section data with adddress 0x7005df40, size 0x000004a0 bytes to file [C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc]
+Writing section data with adddress 0x7005e3e0, size 0x000002c0 bytes to file [C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc]
+Writing section data with adddress 0x7005e6a0, size 0x00000140 bytes to file [C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc]
+Writing section data with adddress 0x7005e7e0, size 0x00000008 bytes to file [C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc]
+Writing section data with adddress 0x7005e7e8, size 0x00000658 bytes to file [C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc]
+[C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc] Parsing file ...
+Found section 0 with adddress 0x00000000, size 0x00000040 bytes
+Found section 1 with adddress 0x70040000, size 0x0000f000 bytes
+Found section 2 with adddress 0x7005d4c0, size 0x00001980 bytes
+[C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc] Found 3 sections. 3 are non-XIP sections, 0 are XIP sections, NON-XIP entryPoint = 0x00000000
+[C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc_xip] Parsing file ...
+[C:/Sandbox/BQ796XX_Sample_Code_AM263x/Debug/mcspi_loopback_am263x-cc_r5fss0-0_nortos_ti-arm-clang.rprc_xip] Found 0 sections. 0 are non-XIP sections, 0 are XIP sections, NON-XIP entryPoint = 0x00000000
