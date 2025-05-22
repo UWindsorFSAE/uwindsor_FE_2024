@@ -1,27 +1,27 @@
 [
    {
-      "directory" : "C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM",
-      "command"   : "clang++ -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D\" -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device\" -I\"C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/c2000_code_generation/include\" -DDEBUG -DCPU1 -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg\" -DF2837xD=1",
-      "file"      : "C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device/F2837xD_CodeStartBranch.asm"
+      "directory" : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM",
+      "command"   : "clang++ -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D\" -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device\" -I\"C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -DDEBUG -DCPU1 -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg\" -DF2837xD=1 -xc",
+      "file"      : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg/board.c"
    },
    {
-      "directory" : "C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM",
-      "command"   : "clang++ -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D\" -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device\" -I\"C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/c2000_code_generation/include\" -DDEBUG -DCPU1 -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg\" -DF2837xD=1",
-      "file"      : "C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device/device.c"
+      "directory" : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM",
+      "command"   : "clang++ -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D\" -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device\" -I\"C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -DDEBUG -DCPU1 -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg\" -DF2837xD=1 -xc",
+      "file"      : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg/c2000ware_libraries.c"
    },
    {
-      "directory" : "C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM",
-      "command"   : "clang++ -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D\" -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device\" -I\"C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/c2000_code_generation/include\" -DDEBUG -DCPU1 -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg\" -DF2837xD=1",
-      "file"      : "C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/main.c"
+      "directory" : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM",
+      "command"   : "clang++ -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D\" -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device\" -I\"C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -DDEBUG -DCPU1 -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg\" -DF2837xD=1",
+      "file"      : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device/F2837xD_CodeStartBranch.asm"
    },
    {
-      "directory" : "C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM",
-      "command"   : "clang++ -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D\" -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device\" -I\"C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/c2000_code_generation/include\" -DDEBUG -DCPU1 -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg\" -DF2837xD=1",
-      "file"      : "C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg/board.c"
+      "directory" : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM",
+      "command"   : "clang++ -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D\" -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device\" -I\"C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -DDEBUG -DCPU1 -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg\" -DF2837xD=1 -xc",
+      "file"      : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device/device.c"
    },
    {
-      "directory" : "C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM",
-      "command"   : "clang++ -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D\" -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device\" -I\"C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/c2000_code_generation/include\" -DDEBUG -DCPU1 -I\"C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg\" -DF2837xD=1",
-      "file"      : "C:/Users/Steven Fung/OneDrive - University of Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg/c2000ware_libraries.c"
+      "directory" : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM",
+      "command"   : "clang++ -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D\" -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/device\" -I\"C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -DDEBUG -DCPU1 -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/CPU1_RAM/syscfg\" -DF2837xD=1 -xc",
+      "file"      : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/F28379D/main.c"
    }
 ]

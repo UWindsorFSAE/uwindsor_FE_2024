@@ -1,0 +1,17 @@
+[
+   {
+      "directory" : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback/CPU1_RAM",
+      "command"   : "clang++ -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback\" -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback/device\" -I\"C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -DDEBUG -DCPU1 -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback/CPU1_RAM/syscfg\" -DF2837xD=1",
+      "file"      : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback/can_ex1_loopback.c"
+   },
+   {
+      "directory" : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback/CPU1_RAM",
+      "command"   : "clang++ -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback\" -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback/device\" -I\"C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -DDEBUG -DCPU1 -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback/CPU1_RAM/syscfg\" -DF2837xD=1",
+      "file"      : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback/CPU1_RAM/syscfg/board.c"
+   },
+   {
+      "directory" : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback/CPU1_RAM",
+      "command"   : "clang++ -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback\" -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback/device\" -I\"C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -DDEBUG -DCPU1 -I\"C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback/CPU1_RAM/syscfg\" -DF2837xD=1",
+      "file"      : "C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D Code/can_ex1_loopback/CPU1_RAM/syscfg/c2000ware_libraries.c"
+   }
+]
