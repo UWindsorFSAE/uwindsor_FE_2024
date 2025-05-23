@@ -5,6 +5,7 @@
 #include "pin_map.h"
 #include "spi.h"
 #include "sysctl.h"
+#include <cstdint>
 
 #define CPU_FREQ_MHZ 200U
 #define DELAY_US(x) SysCtl_delay(((CPU_FREQ_MHZ) * (x)) / 3U)
@@ -14,6 +15,12 @@
 #define REG_CONTROL1         0x0309
 #define REG_DIR0_ADDR        0x0306
 #define REG_COMM_CTRL        0x0308
+
+#define REG_ACTIVE_CELL      0x0003
+#define REG_ADC_CTRL_1       0x030D
+#define REG_VCELL16_HI       0x0568
+#define REG_VCELL16_LO       0x0569
+
 
 // use the same CS pin you already have
 #define CS_PIN     61
@@ -98,10 +105,6 @@ void sendWakePing(void) {
 }
 
 
-
-
-
-
 // low-level frame sender: header + payload[ ] of length `len`
 static void sendFrame(const uint8_t *payload, uint16_t len) {
     uint16_t crc = crc16_ibm((uint8_t*)payload, len);
@@ -117,7 +120,7 @@ static void sendFrame(const uint8_t *payload, uint16_t len) {
         SPI_writeDataBlockingNonFIFO(SPIA_BASE, payload[i]);
     }
     // send CRC (MSB then LSB)
-    SPI_writeDataBlockingNonFIFO(SPIA_BASE, crc & 0xFF);
+    SPI_writeDataBlockingNonFIFO(SPIA_BASE, crc & 0xFF);    
     SPI_writeDataBlockingNonFIFO(SPIA_BASE, (crc >> 8) & 0xFF);
 
     // deassert CS
@@ -199,6 +202,27 @@ void autoAddressingSequence(uint8_t numDevices) {
     }
 }
 
+void readCellVoltages(uint8_t numDevices){ 
+
+    // Set used cells to active
+    stackWrite(REG_ACTIVE_CELL, 0x16); // 16 active cell for testing (will change per module) 
+
+    // Set desired run mode (currently continuous) 
+    stackWrite(REG_ADC_CTRL_1,0x06);
+
+    // Wait required time delay [192us + (5us x TOTALBOARDS)]
+    // TOTALBOARDS = 1 
+    DEVICE_DELAY_US(197);
+
+    
+    for (uint8_t i= 0 ; i<16; i++){ // for num of cells in each board 
+        stackRead(REG_VCELL16_HI + 2*i); //for first 8 most important bits
+        stackRead(REG_VCELL16_LO + 2*i); // for last 8 least important bits 
+    }
+
+    
+
+}
 
 
 
@@ -272,9 +296,12 @@ void main(void)
         sendWakePing();                 // Send SPI wake broadcast
         DEVICE_DELAY_US(11600);         // Wait 11.6ms (safe margin for ACTIVE state)
 
-        autoAddressingSequence(1);
+        autoAddressingSequence(3);
         // End of sequence - can loop or halt
         //while(1); // Prevents repeating the wake sequence unnecessarily
+        DEVICE_DELAY_US(1000); 
+        readCellVoltages(1); 
+        
     }
 }
 
