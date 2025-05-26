@@ -5,17 +5,17 @@ device/device.obj: ../device/device.h
 device/device.obj: ../device/driverlib.h
 device/device.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_memmap.h
 device/device.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/adc.h
-device/device.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdbool.h
-device/device.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_ti_config.h
-device/device.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/linkage.h
-device/device.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdint.h
-device/device.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_stdint40.h
-device/device.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/stdint.h
-device/device.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/cdefs.h
-device/device.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_types.h
-device/device.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_types.h
-device/device.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_stdint.h
-device/device.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_stdint.h
+device/device.obj: C:/ti/c2000_code_generation/include/stdbool.h
+device/device.obj: C:/ti/c2000_code_generation/include/_ti_config.h
+device/device.obj: C:/ti/c2000_code_generation/include/linkage.h
+device/device.obj: C:/ti/c2000_code_generation/include/stdint.h
+device/device.obj: C:/ti/c2000_code_generation/include/_stdint40.h
+device/device.obj: C:/ti/c2000_code_generation/include/sys/stdint.h
+device/device.obj: C:/ti/c2000_code_generation/include/sys/cdefs.h
+device/device.obj: C:/ti/c2000_code_generation/include/sys/_types.h
+device/device.obj: C:/ti/c2000_code_generation/include/machine/_types.h
+device/device.obj: C:/ti/c2000_code_generation/include/machine/_stdint.h
+device/device.obj: C:/ti/c2000_code_generation/include/sys/_stdint.h
 device/device.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_adc.h
 device/device.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_sysctl.h
 device/device.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_types.h
@@ -99,27 +99,27 @@ C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_memmap.h:
 
 C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/adc.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdbool.h:
+C:/ti/c2000_code_generation/include/stdbool.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_ti_config.h:
+C:/ti/c2000_code_generation/include/_ti_config.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/linkage.h:
+C:/ti/c2000_code_generation/include/linkage.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdint.h:
+C:/ti/c2000_code_generation/include/stdint.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_stdint40.h:
+C:/ti/c2000_code_generation/include/_stdint40.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/stdint.h:
+C:/ti/c2000_code_generation/include/sys/stdint.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/cdefs.h:
+C:/ti/c2000_code_generation/include/sys/cdefs.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_types.h:
+C:/ti/c2000_code_generation/include/sys/_types.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_types.h:
+C:/ti/c2000_code_generation/include/machine/_types.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_stdint.h:
+C:/ti/c2000_code_generation/include/machine/_stdint.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_stdint.h:
+C:/ti/c2000_code_generation/include/sys/_stdint.h:
 
 C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_adc.h:
 

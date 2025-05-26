@@ -3,20 +3,20 @@
 syscfg/c2000ware_libraries.obj: syscfg/c2000ware_libraries.c
 syscfg/c2000ware_libraries.obj: syscfg/c2000ware_libraries.h
 syscfg/c2000ware_libraries.obj: syscfg/board.h
-syscfg/c2000ware_libraries.obj: C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D\ Code/F28379D/device/driverlib.h
+syscfg/c2000ware_libraries.obj: C:/Users/Steven\ Fung/OneDrive\ -\ University\ of\ Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D\ Code/F28379D/device/driverlib.h
 syscfg/c2000ware_libraries.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_memmap.h
 syscfg/c2000ware_libraries.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/adc.h
-syscfg/c2000ware_libraries.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdbool.h
-syscfg/c2000ware_libraries.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_ti_config.h
-syscfg/c2000ware_libraries.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/linkage.h
-syscfg/c2000ware_libraries.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdint.h
-syscfg/c2000ware_libraries.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_stdint40.h
-syscfg/c2000ware_libraries.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/stdint.h
-syscfg/c2000ware_libraries.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/cdefs.h
-syscfg/c2000ware_libraries.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_types.h
-syscfg/c2000ware_libraries.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_types.h
-syscfg/c2000ware_libraries.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_stdint.h
-syscfg/c2000ware_libraries.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_stdint.h
+syscfg/c2000ware_libraries.obj: C:/ti/c2000_code_generation/include/stdbool.h
+syscfg/c2000ware_libraries.obj: C:/ti/c2000_code_generation/include/_ti_config.h
+syscfg/c2000ware_libraries.obj: C:/ti/c2000_code_generation/include/linkage.h
+syscfg/c2000ware_libraries.obj: C:/ti/c2000_code_generation/include/stdint.h
+syscfg/c2000ware_libraries.obj: C:/ti/c2000_code_generation/include/_stdint40.h
+syscfg/c2000ware_libraries.obj: C:/ti/c2000_code_generation/include/sys/stdint.h
+syscfg/c2000ware_libraries.obj: C:/ti/c2000_code_generation/include/sys/cdefs.h
+syscfg/c2000ware_libraries.obj: C:/ti/c2000_code_generation/include/sys/_types.h
+syscfg/c2000ware_libraries.obj: C:/ti/c2000_code_generation/include/machine/_types.h
+syscfg/c2000ware_libraries.obj: C:/ti/c2000_code_generation/include/machine/_stdint.h
+syscfg/c2000ware_libraries.obj: C:/ti/c2000_code_generation/include/sys/_stdint.h
 syscfg/c2000ware_libraries.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_adc.h
 syscfg/c2000ware_libraries.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_sysctl.h
 syscfg/c2000ware_libraries.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_types.h
@@ -89,7 +89,7 @@ syscfg/c2000ware_libraries.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837
 syscfg/c2000ware_libraries.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_upp.h
 syscfg/c2000ware_libraries.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/version.h
 syscfg/c2000ware_libraries.obj: C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/driver_inclusive_terminology_mapping.h
-syscfg/c2000ware_libraries.obj: C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D\ Code/F28379D/device/device.h
+syscfg/c2000ware_libraries.obj: C:/Users/Steven\ Fung/OneDrive\ -\ University\ of\ Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D\ Code/F28379D/device/device.h
 
 syscfg/c2000ware_libraries.c:
 
@@ -97,33 +97,33 @@ syscfg/c2000ware_libraries.h:
 
 syscfg/board.h:
 
-C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D\ Code/F28379D/device/driverlib.h:
+C:/Users/Steven\ Fung/OneDrive\ -\ University\ of\ Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D\ Code/F28379D/device/driverlib.h:
 
 C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_memmap.h:
 
 C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/adc.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdbool.h:
+C:/ti/c2000_code_generation/include/stdbool.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_ti_config.h:
+C:/ti/c2000_code_generation/include/_ti_config.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/linkage.h:
+C:/ti/c2000_code_generation/include/linkage.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdint.h:
+C:/ti/c2000_code_generation/include/stdint.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_stdint40.h:
+C:/ti/c2000_code_generation/include/_stdint40.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/stdint.h:
+C:/ti/c2000_code_generation/include/sys/stdint.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/cdefs.h:
+C:/ti/c2000_code_generation/include/sys/cdefs.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_types.h:
+C:/ti/c2000_code_generation/include/sys/_types.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_types.h:
+C:/ti/c2000_code_generation/include/machine/_types.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_stdint.h:
+C:/ti/c2000_code_generation/include/machine/_stdint.h:
 
-C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_stdint.h:
+C:/ti/c2000_code_generation/include/sys/_stdint.h:
 
 C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_adc.h:
 
@@ -269,5 +269,5 @@ C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/version.h:
 
 C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/driver_inclusive_terminology_mapping.h:
 
-C:/Users/jared/Documents/uwindsor_FE_2024/Accumulator/Firmware/F28379D\ Code/F28379D/device/device.h:
+C:/Users/Steven\ Fung/OneDrive\ -\ University\ of\ Windsor/uwindsor_FE_2024/Accumulator/Firmware/F28379D\ Code/F28379D/device/device.h:
 

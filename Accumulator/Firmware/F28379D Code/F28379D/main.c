@@ -5,7 +5,7 @@
 #include "pin_map.h"
 #include "spi.h"
 #include "sysctl.h"
-#include <cstdint>
+
 
 #define CPU_FREQ_MHZ 200U
 #define DELAY_US(x) SysCtl_delay(((CPU_FREQ_MHZ) * (x)) / 3U)
@@ -214,8 +214,8 @@ void readCellVoltages(uint8_t numDevices){
     // TOTALBOARDS = 1 
     DEVICE_DELAY_US(197);
 
-    
-    for (uint8_t i= 0 ; i<16; i++){ // for num of cells in each board 
+    uint8_t i; 
+    for (i= 0 ; i<16; i++){ // for num of cells in each board 
         stackRead(REG_VCELL16_HI + 2*i); //for first 8 most important bits
         stackRead(REG_VCELL16_LO + 2*i); // for last 8 least important bits 
     }
