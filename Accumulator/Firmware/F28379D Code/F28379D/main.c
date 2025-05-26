@@ -222,61 +222,7 @@ void readCellVoltages(uint8_t numDevices){
 
     
 
-}
-
-
-
-/*void sendWakePing(void) {
-    uint8_t tx[5] = {
-        0x90,           // INIT = single-device write
-        0x00,           // device ID
-        0x03, 0x09,     // register address = 0x0309 (CONTROL1)
-        0x20            // data = 1<<5 (SEND_WAKE)
-    };
-    uint16_t crc = crc16_ibm(tx, 5);
-
-    // assert CS
-    GPIO_writePin(GPIO_61_GPIO61, 0);    // nCS low
-    DEVICE_DELAY_US(1);
-
-    // send command + CRC
-    uint16_t i;
-    for (i = 0; i < 5; i++) {
-        SPI_writeDataBlockingNonFIFO(SPIA_BASE, tx[i]);
-    }
-    SPI_writeDataBlockingNonFIFO(SPIA_BASE, (crc >> 8) & 0xFF);
-    SPI_writeDataBlockingNonFIFO(SPIA_BASE,  crc       & 0xFF);
-
-    // deassert CS
-    DEVICE_DELAY_US(1);
-    GPIO_writePin(GPIO_61_GPIO61, 1);    // nCS high
-}*/
-
-//ideally use spiwritereg instead of this function
-
-
-//
-// Main
-//
-/*void main(void)
-{
-    
-    Device_init();
-    Device_initGPIO();
-    Interrupt_initModule();
-    Interrupt_initVectorTable();
-    Board_init();
-
-    EINT;
-    ERTM;
-
-    while(1){
-    wakeupSequence();
-    //DEVICE_DELAY_US(3500);
-    }
-    //sendWakePing();
-    //SpiReadReg()
-}*/
+}   
 
 void main(void)
 {
