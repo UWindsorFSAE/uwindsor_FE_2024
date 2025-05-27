@@ -6,6 +6,8 @@
 #include "spi.h"
 #include "sysctl.h"
 
+#include <stdint.h>
+#include <stdio.h>
 
 #define CPU_FREQ_MHZ 200U
 #define DELAY_US(x) SysCtl_delay(((CPU_FREQ_MHZ) * (x)) / 3U)
@@ -14,6 +16,7 @@
 #define REG_OTP_ECC_DATAIN1  0x0343
 #define REG_CONTROL1         0x0309
 #define REG_DIR0_ADDR        0x0306
+#define REG_DIR1_ADDR        0x0307
 #define REG_COMM_CTRL        0x0308
 
 #define REG_ACTIVE_CELL      0x0003
@@ -24,6 +27,12 @@
 
 // use the same CS pin you already have
 #define CS_PIN     61
+#define NUM_CELLS  16
+#define ADC_RESOLUTION_UV 190.73f 
+
+// Variables 
+float cellVoltages[NUM_CELLS];
+
 
 // CRC Check Function
 
@@ -120,8 +129,9 @@ static void sendFrame(const uint8_t *payload, uint16_t len) {
         SPI_writeDataBlockingNonFIFO(SPIA_BASE, payload[i]);
     }
     // send CRC (MSB then LSB)
-    SPI_writeDataBlockingNonFIFO(SPIA_BASE, crc & 0xFF);    
+    SPI_writeDataBlockingNonFIFO(SPIA_BASE, crc & 0xFF);
     SPI_writeDataBlockingNonFIFO(SPIA_BASE, (crc >> 8) & 0xFF);
+    
 
     // deassert CS
     DEVICE_DELAY_US(2);
@@ -163,14 +173,24 @@ static void singleDeviceWrite(uint8_t deviceId, uint16_t regAddr, uint8_t value)
 }
 
 // “stack read” (header = 0xA0) — dummy, we ignore the returned byte
-static void stackRead(uint16_t regAddr) {
-    uint8_t frame[4] = {
+static void stackRead(uint16_t regAddr, uint8_t length){ 
+    uint8_t frame[4] = { 
         0xA0,
-        (uint8_t)(regAddr >> 8),
-        (uint8_t)(regAddr & 0xFF),
-        0x00    // read length = 1
-    };
-    sendFrame(frame, 4);
+        (uint8_t)(regAddr >> 8), 
+        (uint8_t)(regAddr & 0xFF), 
+        (uint8_t)(length-1)
+    }; 
+
+    sendFrame(frame, sizeof(frame)); 
+}
+
+void receiveFrame(uint8_t *buffer, uint16_t length) {
+    int i;
+    for (i = 0; i < length; i++) {
+        while (!SPI_getRxFIFOStatus(SPIA_BASE)); // Wait for data
+            buffer[i] = SPI_readDataBlockingNonFIFO(SPIA_BASE);
+        
+    }
 }
 
 // The full auto-addressing sequence:
@@ -198,14 +218,14 @@ void autoAddressingSequence(uint8_t numDevices) {
 
     // 6) Dummy stack reads to OTP_ECC_DATAINx
     for (i = 0; i < 8; i++) {
-        stackRead(REG_OTP_ECC_DATAIN1 + i);
+        stackRead(REG_OTP_ECC_DATAIN1 + i,1);
     }
 }
 
 void readCellVoltages(uint8_t numDevices){ 
 
     // Set used cells to active
-    stackWrite(REG_ACTIVE_CELL, 0x16); // 16 active cell for testing (will change per module) 
+    stackWrite(REG_ACTIVE_CELL, 0x0A); // 16 active cell for testing (will change per module) 
 
     // Set desired run mode (currently continuous) 
     stackWrite(REG_ADC_CTRL_1,0x06);
@@ -214,15 +234,78 @@ void readCellVoltages(uint8_t numDevices){
     // TOTALBOARDS = 1 
     DEVICE_DELAY_US(197);
 
-    uint8_t i; 
-    for (i= 0 ; i<16; i++){ // for num of cells in each board 
-        stackRead(REG_VCELL16_HI + 2*i); //for first 8 most important bits
-        stackRead(REG_VCELL16_LO + 2*i); // for last 8 least important bits 
-    }
-
+    stackRead(REG_VCELL16_HI,32); 
+    stackRead(REG_VCELL16_LO,32);
     
+    //uint8_t rawData[NUM_CELLS *2]; 
+    //receiveFrame(rawData, sizeof(rawData)); 
+
+    //int i;
+
+    /*
+    for (i = 0; i < NUM_CELLS; i++) {
+        uint16_t raw = ((uint16_t)rawData[i*2] << 8) | rawData[i*2 + 1]; 
+        int16_t signedRaw = (int16_t)raw;
+        float voltage_uV = signedRaw * ADC_RESOLUTION_UV;
+        cellVoltages[i] = voltage_uV / 1e6f;// Convert to volts
+    }
+    */
 
 }   
+
+void broadcastWriteReverse(uint16_t regAddr, uint8_t value) {
+    uint8_t frame[4] = {
+        0xE0,                           // Broadcast write reverse
+        (uint8_t)(regAddr >> 8),       // Register address high byte
+        (uint8_t)(regAddr & 0xFF),     // Register address low byte
+        value                          // Data byte
+    };
+    sendFrame(frame, sizeof(frame));
+}
+
+
+void reverseAddressing(uint8_t numDevices){
+    // Write to BQ79600-Q1, set CONTROL1[DIR_SEL]=1 (CONTROL1=0x80)
+    singleDeviceWrite(0x00, REG_CONTROL1 , 0x80);
+
+    //Single Device write to BQ79600-Q1 to set CONTROL1[SEND_WAKE]=1
+    singleDeviceWrite(0x00, REG_CONTROL1, 0xA0); 
+
+    // Dummy Write register OTP_ECC_DATA
+    int i;
+    for (i = 0; i < 8; i++) {
+        stackWrite(REG_OTP_ECC_DATAIN1 + i, 0x00);
+    }
+
+    // Send a broadcast write reverse command to change direction of stacked devices 
+    broadcastWriteReverse(REG_CONTROL1, 0x80); 
+
+    // Broadcast write to set all devices as stack device 
+    broadcastWrite(REG_COMM_CTRL, 0x02); 
+
+    // Broadcast wirte to enable auto-addressing
+    broadcastWrite(REG_CONTROL1,0x81); 
+
+    // Broadcast write consecutively to DIR1_ADDR
+    uint8_t j; 
+    for (j = 0; j<4; j++){ 
+        broadcastWrite(REG_DIR1_ADDR, j);
+    }
+
+    // Broadcast write to set all devices as stack device first 
+    broadcastWrite(REG_COMM_CTRL, 0x02); 
+
+    // Single device write, top of stack, confirm stack 
+    singleDeviceWrite(numDevices, REG_COMM_CTRL, 0x03);
+
+    // Dummy stack read registers OTP_ECC_DATAIN1
+
+    int k;
+    for (k = 0; k < 8; k++) {
+        stackRead(REG_OTP_ECC_DATAIN1 + k, 1);
+    }
+    
+}
 
 void main(void)
 {
@@ -241,13 +324,11 @@ void main(void)
         DEVICE_DELAY_US(3500);          // Wait 3.5ms
         sendWakePing();                 // Send SPI wake broadcast
         DEVICE_DELAY_US(11600);         // Wait 11.6ms (safe margin for ACTIVE state)
-
-        autoAddressingSequence(3);
-        // End of sequence - can loop or halt
-        //while(1); // Prevents repeating the wake sequence unnecessarily
-        DEVICE_DELAY_US(1000); 
-        readCellVoltages(1); 
-        
+        autoAddressingSequence(3);      // Auto-addressing for 3 devices 
+        DEVICE_DELAY_US(1000);          // Delay 1ms 
+        readCellVoltages(1);  
+        DEVICE_DELAY_US(1000);          // Read Cell Voltage s
+        reverseAddressing(1);
     }
 }
 
