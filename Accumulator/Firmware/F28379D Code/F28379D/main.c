@@ -328,10 +328,10 @@ void main(void)
         DEVICE_DELAY_US(1000);          // Delay 1ms 
         readCellVoltages(1);  
         DEVICE_DELAY_US(1000);          // Read Cell Voltage s
-        reverseAddressing(1);
+        reverseAddressing(3);
+        DEVICE_DELAY_US(1000);
     }
 }
 
 //
 // End File
-//
